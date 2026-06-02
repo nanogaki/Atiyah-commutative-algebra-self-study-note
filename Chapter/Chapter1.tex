@@ -1,0 +1,103 @@
+\chapter{Rings and Ideals}
+
+\section*{IDEALS. PRIME AND MAXIMAL IDEALS}
+
+\begin{proposition}{1.1}
+	There is a one-to-one order-preserving correspondence between the ideals $\mathfrak{b}$ of $A$ which contain $\mathfrak{a}$, and the ideals $\overline{\mathfrak{b}}$ of $A/\mathfrak{a}$, given by $\mathfrak{b}=\phi^{-1}\left(\overline{\mathfrak{b}}\right)$.
+\end{proposition}
+
+\begin{corollary}{1.5}
+	Every non-unit of $A$ is contained in a maximal ideal.
+\end{corollary}
+
+\begin{corollary}{1.6}
+	\begin{enumerate}[label=\textup{(\roman*)},ref=\thecorollarytemp(\roman*)]\crefalias{enumi}{corollary}
+		\item\label{1.6.1} Let $A$ be a ring and $\mathfrak{m}\neq(1)$ an ideal of $A$ such that every $x\in A-\mathfrak{m}$ is a unit in $A$, Then $A$ is a local ring and $\mathfrak{m}$ its maximal ideal.
+		\item Let $A$ be a ring and $\mathfrak{m}$ a maximal ideal of $A$, such that every element of $1+\mathfrak{m}$ is a unit in $A$, then $A$ is a local ring.
+	\end{enumerate}
+\end{corollary}
+
+\section*{NILRADICAL AND JACOBSON RADICAL}
+
+We denote nilradical to be \textcolor{orange}{$\mathfrak{R}$} and Jacobson radical to be \textcolor{orange}{$\mathfrak{J}$}.
+
+\begin{proposition}{1.8}
+	The nilradical of $A$ is the intersection of all the prime ideals of $A$.
+	\begin{proof}
+		Assume that $f\notin\mathfrak{R}$. Let $\Sigma$ be a set of ideals $\mathfrak{a}$ with property $f^n\notin\mathfrak{a}$. Then $\Sigma$ has maximal element which is prime.
+	\end{proof}
+\end{proposition}
+
+\begin{proposition}{1.9}
+	$x\in\mathfrak{J}$ $\Leftrightarrow$ $1-xy$ is a unit in $A$ for all $y\in A$.
+\end{proposition}
+
+\section*{OPERATIONS ON IDEALS}
+
+Two ideals $\mathfrak{a}$, $\mathfrak{b}$ are said to be \textcolor{orange}{coprime} if $\mathfrak{a}+\mathfrak{b}=1$. Thus we have $\mathfrak{a}\cap\mathfrak{b}=\mathfrak{ab}$.
+
+\begin{proposition}{1.10}[Chinese Remainder Theorem]
+	Define $\phi$ to be
+	\begin{equation*}
+		\phi: A\rightarrow\prod_{i=1}^n\left(A/\mathfrak{a}_i\right),\qquad\phi(x)=\left(x+\mathfrak{a}_1,\cdots,\mathfrak{a}_n\right).
+	\end{equation*}
+	\begin{enumerate}[label=\textup{(\roman*)}]
+		\item If $\mathfrak{a}_i$ and $\mathfrak{a}_j$ are coprime whenever $i\neq j$, then $\mathfrak{a}_1\cdots\mathfrak{a}_n=\bigcap_{i=1}^n\mathfrak{a}_i$.
+		\item $\phi$ is surjective $\Leftrightarrow$ $\mathfrak{a}_i$ and $\mathfrak{a}_j$ are coprime whenever $i\neq j$.
+		\item $\phi$ is injective $\Leftrightarrow$ $\bigcap_{i=1}^n\mathfrak{a}_i=(0)$.
+	\end{enumerate}
+\end{proposition}
+
+\begin{proposition}{1.11}
+	Denote $\mathfrak{a}$ to be ideal and $\mathfrak{p}$ to be prime ideal.
+	\begin{enumerate}[label=\textup{(\roman*)},ref=\thepropositiontemp(\roman*)]\crefalias{enumi}{proposition}
+		\item\label{1.11.1} If $\mathfrak{a}\subseteq\bigcup_{i=1}^n\mathfrak{p}_i$, then $\mathfrak{a}\subseteq\mathfrak{p}_i$ for some $i$.
+		\item\label{1.11.2} If $\mathfrak{p}\supseteq\bigcap_{i=1}^n\mathfrak{a}_i$, then $\mathfrak{p}\supseteq\mathfrak{a}_i$ for some $i$. If $\mathfrak{p}=\bigcap_{i=1}^n\mathfrak{a}_i$, then $\mathfrak{p}=\mathfrak{a}_i$ for some $i$.
+	\end{enumerate}
+\end{proposition}
+
+The \textcolor{orange}{ideal quotient} of $\mathfrak{a}$ and $\mathfrak{b}$ is
+\begin{equation*}
+	(\mathfrak{a}:\mathfrak{b})=\left\{x\in A:x\mathfrak{b}\subseteq\mathfrak{a}\right\}.
+\end{equation*}
+The annihilator of $\mathfrak{b}$ is $\operatorname{Ann}(\mathfrak{b})=(0:\mathfrak{b})$.
+
+The \textcolor{orange}{radical} of $\mathfrak{a}$ is
+\begin{equation*}
+	\sqrt{\mathfrak{a}}=\left\{x\in A:x^n\in\mathfrak{a}\text{ for some }n>0\right\}.
+\end{equation*}
+
+\section*{EXTENSION AND CONTRACTION}
+Let $f:A\rightarrow B$ be a ring homomorphism. Let $\mathfrak{a}\in A$ and $\mathfrak{b}\in B$. Define
+\begin{equation*}
+	\mathfrak{a}^e=Bf(\mathfrak{a}),\qquad\mathfrak{b}^c=f^{-1}(\mathfrak{b})
+\end{equation*}
+to be the \textcolor{orange}{extension} of $\mathfrak{a}$ and the \textcolor{orange}{contraction} of $\mathfrak{b}$, respectively. If $\mathfrak{b}$ is prime, $\mathfrak{b}^c$ is prime; if $\mathfrak{a}$ is prime, $\mathfrak{a}^e$ need not be prime.
+
+\begin{proposition}{1.17}
+	$\mathfrak{a}\subseteq\mathfrak{a}^{ec}$, $\mathfrak{b}\supseteq\mathfrak{b}^{ce}$.
+\end{proposition}
+
+\section*{DEFINITIONS AND PROPOSITIONS FROM EXERCISES}
+
+\begin{definition}
+	\textcolor{orange}{Idempotent} is an element $e$ which satisfies $e^2=e$.
+	
+	A ring in which every element is an idempotent is a \textcolor{orange}{Boolean ring}.
+\end{definition}
+
+\begin{definition}
+	A topological space $X$ is \textcolor{orange}{reducible} if it can be written as a union $X=X_1\cup X_2$ of two closed proper subsets $X_1$, $X_2$ of $X$. Equivalently, $X$ is \textcolor{orange}{irreducible} if every pair of non-empty open sets in $X$ intersect, or if every non-empty open set is dense in $X$.
+\end{definition}
+
+\begin{definition}
+	Let $A$ be a ring and let $\operatorname{Spec}(A)$ be the set of all prime ideals of $A$. For each subset $E$ of $A$, let $V(E)$ denote the set of all prime ideals of $A$ which contain $E$. By \Cref{ex1.15}, the sets $V(E)$ satisfy the axioms for closed sets in a topological space. The resulting topology on $\operatorname{Spec}(A)$ is called \textcolor{orange}{Zariski topology}, and $\operatorname{Spec}(A)$ is called the \textcolor{orange}{prime spectrum} of $A$.
+
+For each $f\in A$, the complement of $V(f)$ in $\operatorname{Spec}(A)$, denote to be $X_f$, is called \textcolor{orange}{basic open set} of $\operatorname{Spec}(A)$.
+
+The subspace of $\operatorname{Spec}(A)$ consisting of the maximal ideals of $A$ with the induced topology, is called the \textcolor{orange}{maximal spectrum} of $A$ and is denoted by $\operatorname{Max}(A)$.
+\end{definition}
+
+\begin{proposition*}[\Cref{ex1.27}]
+	Let $k$ be algebraically closed. Then the affine space $k^n$ with its classical Zariski topology is homeomorphic to $\operatorname{Max}(k[x_1,\cdots,x_n])$.
+\end{proposition*}

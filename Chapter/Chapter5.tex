@@ -1,0 +1,92 @@
+\chapter{Integral Dependence and Valuations}
+
+\section*{INTEGRAL DEPENDENCE}
+
+\begin{proposition}{5.1}
+	The following are equivalent:
+	\begin{enumerate}[label=\textup{(\roman*)}]
+		\item $x\in B$ is integral over $A$;
+		\item $A[x]$ is a finitely generated $A$-module;
+		\item $A[x]$ is contained in a subring $C$ of $B$ such that $C$ is a finitely generated $A$-module;
+		\item There exist a faithful $A[x]$-module $M$ which is finitely generated as an $A$-module.
+	\end{enumerate}
+\end{proposition}
+
+\begin{definition}
+	The set $\overline{A}$ of elements of $B$ which are integral over $A$ is called the \textcolor{orange}{integral closure} of $A$ in $B$. If $\overline{A}=A$, then $A$ is said to be \textcolor{orange}{integrally closed in $B$}. If $\overline{A}=B$, the ring $B$ is said to be \textcolor{orange}{integral over $A$}.
+	
+	An integral domain is said to be \textcolor{orange}{integrally closed} (without qualification) if it is integrally closed in its field of fractions.
+\end{definition}
+
+\section*{THE GOING-UP THEOREM}
+
+\begin{theorem}{5.10}[\textcolor{red}{Lying over property}]
+	Let $A\subseteq B$ be rings, $B$ integral over $A$, and let $\mathfrak{p}$ be a prime ideal of $A$. Then there exists a prime ideal $\mathfrak{q}$ of $B$ such that $\mathfrak{q}\cap A=\mathfrak{p}$.
+\end{theorem}
+
+\begin{theorem}{5.11}[Going-up theorem]
+	Let $A\subseteq B$ be rings, $B$ integral over $A$. Let $\mathfrak{p}_1\subseteq\cdots\subseteq\mathfrak{p}_n$ be a chain of prime ideals of $A$ and $\mathfrak{q}_1\subseteq\cdots\subseteq\mathfrak{q}_m$ $(m<n)$ a chain of prime ideals of $B$ such that $\mathfrak{q}_i\cap A=\mathfrak{p}_i$ for $1\leqslant i\leqslant m$. Then the chain $\mathfrak{q}_1\subseteq\cdots\subseteq\mathfrak{q}_m$ can be extended to a chain $\mathfrak{q}_1\subseteq\cdots\subseteq\mathfrak{q}_n$ such that $\mathfrak{q}$ of $B$ such that $\mathfrak{q}_i\cap A=\mathfrak{p}_i$ for $1\leqslant i\leqslant n$.
+\end{theorem}
+
+\section*{THE GOING-DOWN THEOREM}
+
+\begin{proposition}{5.13}
+	Let $A$ be an integral domain. Then "$A$ is integrally closed" is a local property.
+\end{proposition}
+
+\begin{theorem}{5.16}[Going-down theorem]
+	Let $A\subseteq B$ be integral domains, $A$ integrally closed, $B$ integral over $A$. Let $\mathfrak{p}_1\subseteq\cdots\subseteq\mathfrak{p}_n$ be a chain of prime ideals of $A$ and $\mathfrak{q}_1\subseteq\cdots\subseteq\mathfrak{q}_m$ $(m<n)$ a chain of prime ideals of $B$ such that $\mathfrak{q}_i\cap A=\mathfrak{p}_i$ for $1\leqslant i\leqslant m$. Then the chain $\mathfrak{q}_1\subseteq\cdots\subseteq\mathfrak{q}_m$ can be extended to a chain $\mathfrak{q}_1\subseteq\cdots\subseteq\mathfrak{q}_n$ such that $\mathfrak{q}$ of $B$ such that $\mathfrak{q}_i\cap A=\mathfrak{p}_i$ for $1\leqslant i\leqslant n$.
+\end{theorem}
+
+\section*{VALUATION RINGS}
+
+\begin{definition}
+	Let $B$ be an integral domain. $B$ is a \textcolor{orange}{valuation ring} of $\operatorname{Frac}(B)$ if, for each $x\neq0$, either $x\in B$ or $x^{-1}\in B$ (or both).
+\end{definition}
+
+\begin{proposition}{5.18}
+	Let $B$ be a valuation ring, $K=\operatorname{Frac}(B)$ its field of fractions. Then
+	\begin{enumerate}[label=\textup{(\roman*)}]
+		\item $B$ is a local ring;
+		\item If $B^\prime$ is a ring such that $B\subseteq B^\prime\subseteq K$, then $B^\prime$ is a valuation ring of $K$;
+		\item $B$ is integrally closed.
+	\end{enumerate}
+\end{proposition}
+
+\begin{theorem}{5.21}
+	Let $K$ be a field, $\Omega$ an algebraically closed field. Let $\Sigma$ be the set of all pairs $(A,f)$, where $A$ is a subring of $K$ and $f:A\rightarrow\Omega$ a homomorphism. Define a partial order of $\Sigma$ to be:
+	\begin{equation*}
+		(A,f)\leqslant(B,g)\Leftrightarrow A\subseteq B \text{ and } g|_A=f.
+	\end{equation*}
+	Then the maximal element of $\Sigma$ is a valuation ring of $K$.
+\end{theorem}
+
+\section*{DEFINITIONS AND PROPOSITIONS FROM EXERCISES}
+
+\begin{definition}
+	A ring homomorphism $f: A\rightarrow B$ is said to have the \textcolor{orange}{going-up property} if for $\mathfrak{p}_1\subseteq\mathfrak{p}_2$ and $\mathfrak{p}_1=f^{-1}(\mathfrak{q}_1)$, there exist a $\mathfrak{q}_2$ such that $\mathfrak{q}_1\subseteq\mathfrak{q}_2$ and $f^{-1}(\mathfrak{q}_2)=\mathfrak{p}_2$. Reversing the inclusions of prime ideals we have the \textcolor{orange}{going-down property}.
+\end{definition}
+
+\begin{proposition*}[\textcolor{red}{Noether normalization lemma}]
+	Let $k$ be a field and let $A\neq0$ be a finitely generated $k$-algebra. Then there exist elements $y_1,\cdots,y_r\in A$ which are algebraically independent over $k$ and such that $A$ is integral over $k[y_1,\cdots,y_r]$.
+\end{proposition*}
+
+\begin{definition}
+	A ring $A$ satisfied the following equivalent property is a \textcolor{orange}{Jacobson ring}.
+	\begin{enumerate}[label=\textup{(\roman*)}]
+		\item Every prime ideal in $A$ is an intersection of maximal ideals.
+		\item In every homomorphic image of $A$ the nilradical is equal to the Jacobson radical.
+		\item Every prime ideal in $A$ which is not maximal is equal to the intersection of the prime ideals which contain it strictly.
+	\end{enumerate}
+\end{definition}
+
+\begin{definition}
+	Let $A$ be a valuation ring of a field $K$. The group $U$ of units of $A$ is a subgroup of the multiplicative group $K^*$ of $K$. Let $\Gamma=K^*/U$. If $\xi,\iota\in\Gamma$ are represented by $x,y\in K$, define $\xi\geqslant\iota$ to mean $xy^{-1}\in A$. Then $\Gamma$ is a totally ordered abelian group. It is called the \textcolor{orange}{value group} of $A$.
+	
+	Conversely, let $\Gamma$ be a totally ordered abelian group. A \textcolor{orange}{valuation} of $K$ with values in $\Gamma$ is a mapping $v:K^*\rightarrow\Gamma$ such that
+	\begin{enumerate}[label=\textup{(\arabic*)}]
+		\item $v(xy)=v(x)+v(y)$,
+		\item $v(x+y)\geqslant\operatorname{min}(v(x),v(y))$,
+	\end{enumerate}
+	for all $x,y\in K^*$. Then the set of elements $x\in K^*$ such that $v(x)\geqslant0$ is a valuation ring of $K$. This ring is called the \textcolor{orange}{valuation ring} of $v$, and the subgroup $v(K^*)$ of $\Gamma$ is the \textcolor{orange}{value group} of $v$. Thus the concepts of valuation ring and valuation are equivalent.
+\end{definition}

@@ -1,0 +1,127 @@
+\chapter{Modules}
+
+\begin{proposition}{2.1}
+	\begin{enumerate}[label=\textup{(\roman*)}]
+		\item If $L\supseteq M\supseteq N$ are $A$-modules, then $(L/N)/(M/N)\cong L/M$.
+		\item If $M_1$, $M_2$ are submodules of $M$, then $\left(M_1+M_2\right)/M_1\cong M_2/\left(M_1\cap M_2\right)$.
+	\end{enumerate}
+\end{proposition}
+
+An $A$-module is \textcolor{orange}{faithful} if $\operatorname{Ann}(M)=0$.
+
+\section*{FINITELY GENERATED MODULES}
+
+\begin{proposition}{2.3}
+	$M$ is a finitely generated $A$-module $\Leftrightarrow$ $M$ is isomorphic to a quotient of $A^n$ for some integer $n>0$. More precisely, $n$ is the number of generators of $M$ and may not be unique.
+\end{proposition}
+
+\begin{proposition}{2.4}[\textcolor{red}{Cayley–Hamilton theorem}]
+	Let $M$ be a finitely generated $A$-module, let $\mathfrak{a}$ be an ideal of $A$, and let $\phi$ be an $A$-module endomorphism of $M$ such that $\phi(M)\subseteq\mathfrak{a}M$. Then $\phi$ satisfies an equation of the form
+	\begin{equation*}
+		\phi^n+a_1\phi^{n-1}+\cdots+a_n=0
+	\end{equation*}
+	where the $a_i$ are in $\mathfrak{a}$.
+\end{proposition}
+
+\begin{proposition}{2.6}[\textcolor{red}{Nakayama's lemma}]
+	Let $M$ be a finitely generated $A$-module and $\mathfrak{a}$ an ideal of $A$ contained in the Jacobson radical of $A$. Then $\mathfrak{a}M=M$ implies $M=0$.
+\end{proposition}
+
+\section*{EXACT SEQUENCES}
+
+\begin{proposition}{2.10}[Snake lemma]
+	Let
+	\begin{equation*}
+		\begin{tikzcd}
+		0\arrow[r]&M^\prime\arrow[r,"u"]\arrow[d,"f^\prime"]&M\arrow[r,"v"]\arrow[d,"f"]
+			&M^{\prime\prime}\arrow[r]\arrow[d,"f^{\prime\prime}"]&0\\
+		0\arrow[r]&N^\prime\arrow[r,"u^\prime"]&N\arrow[r,"v^\prime"]
+			&N^{\prime\prime}\arrow[r]&0
+	\end{tikzcd}
+	\end{equation*}
+	be a commutative diagram of $A-$modules and homomorphisms, with the rows exact. Then there exists an exact sequence
+
+	\begin{equation*}
+		0\longrightarrow\ker\left(f^\prime\right)\xrightarrow{\;\overline{u}\;}\ker(f)\xrightarrow{\;\overline{v}\;}\ker\left(f^{\prime\prime}\right)\xrightarrow{\;\delta\;}
+		\operatorname{coker}\left(f^\prime\right)\xrightarrow{\;\overline{u}^\prime\;}\operatorname{coker}(f)\xrightarrow{\;\overline{v}^\prime\;}\operatorname{coker}\left(f^{\prime\prime}\right)\longrightarrow0.
+	\end{equation*}
+
+\end{proposition}
+
+\begin{definition}
+	Let $C$ be a class of $A$-modules and let $\lambda$ be a function on $C$ with values in $\mathbb{Z}$. The function $\lambda$ is \textcolor{orange}{additive} if for each short exact sequence
+	\begin{equation*}
+		0\rightarrow M^\prime\rightarrow M\rightarrow M^{\prime\prime}\rightarrow0
+	\end{equation*}
+	in which all terms belong to $C$, we have $\lambda(M^\prime)-\lambda(M)+\lambda(M^{\prime\prime})=0$.
+\end{definition}
+
+\section*{TENSOR PRODUCT}
+
+\begin{proposition}{2.12}[Universal property]
+	Let $M,N$ be $A$-modules. The tensor product of $M$ and $N$ over $A$ is an $A$-module $M\otimes_AN$	together with an $A$-bilinear map
+	\begin{equation*}
+		f:M\times N\to M\otimes_A N,\qquad (m,n)\mapsto m\otimes n,
+	\end{equation*}
+	such that, for every $A$-module $P$ and every $A$-bilinear map $\tau:M\times N\to P$, there exists a unique $A$-linear map $\widetilde{\tau}:M\otimes_AN\to P$ such that $\tau=\widetilde{\tau}\circ f$. Equivalently, the following diagram commutes:
+	\begin{equation*}
+		\begin{tikzcd}
+			M\times N \arrow[r,"f"] \arrow[dr,"\tau"'] &
+			M\otimes_A N \arrow[d,dashed,"\widetilde{\tau}"] \\
+			& P
+		\end{tikzcd}
+	\end{equation*}	
+\end{proposition}
+
+\begin{proposition}{2.15}
+	Let $A$, $B$ be rings, let $M$ be an $A$-module, $P$ a $B$-module and $N$ an $(A,B)$-bimodule. then
+	\begin{equation*}
+		\left(M\otimes_AN\right)\otimes_BP\cong M\otimes_A\left(N\otimes_BP\right).
+	\end{equation*}
+\end{proposition}
+
+Let M be an $A$-module and $f: A\rightarrow B$ be a homomorphism of rings. Define $\mathcolor{orange}{M_B}=B\otimes_AM$.
+
+If the functor $T_N:M\mapsto M\otimes_AN$ on the category of $A$-modules is exact, then $N$ is said to be a \textcolor{orange}{flat} $A$-module.
+
+\begin{proposition}{2.19}
+	For an $A$-module $N$, the following are equivalent:
+	\begin{enumerate}[label=\textup{(\roman*)},ref=\thepropositiontemp(\roman*)]\crefalias{enumi}{proposition}
+		\item $N$ is flat.
+		\item If $0\rightarrow M^\prime\rightarrow M\rightarrow M^{\prime\prime}\rightarrow0$ is any exact sequence of $A$-modules, then $0\rightarrow M^\prime\otimes N\rightarrow M\otimes N\rightarrow M^{\prime\prime}\otimes N\rightarrow0$ is exact.
+		\item If $f:M^\prime\rightarrow M$ is injective, then $f\otimes1:M^\prime\otimes N\rightarrow M\otimes N$ is injective.
+		\item\label{2.19.4} If $f:M^\prime\rightarrow M$ is injective and $M$, $M^\prime$ are finitely generated, then $f\otimes1:M^\prime\otimes N\rightarrow M\otimes N$ is injective.
+	\end{enumerate}
+\end{proposition}
+
+\section*{ALGEBRA}
+
+Let $f:A\rightarrow B$ be a ring homomorphism. If $a\in A$ and $b\in B$, define a product
+\begin{equation*}
+	ab=f(a)b.
+\end{equation*}
+Thus, $B$ has an $A$-module structure. The ring $B$ is said to be an \textcolor{orange}{$A$-algebra}.
+
+\section*{DEFINITIONS AND PROPOSITIONS FROM EXERCISES}
+
+\begin{definition}
+	A partially ordered set $I$ is said to be a \textcolor{orange}{directed} set if for each pair $i, j\in I$ there exists $k\in I$ such that $i\leqslant k$ and $j\leqslant k$.
+	
+Let $A$ be a ring, let $I$ be a directed set and let $\left(M_i\right)_{i\in I}$ be a family of $A$-modules indexed by $I$. For each pair $i, j\in I$ such that $i\leqslant j$, let $\mu_{ij}:M_i\rightarrow M_j$ be an $A$-homomorphism, and suppose:
+\begin{enumerate}[label=\textup{(\arabic*)}]
+		\item $\mu_{ii}$ is the identity mapping of $M_i$, for all $i\in I$;
+		\item $\mu_{ik}=\mu_{jk}\circ\mu_{ij}$ whenever $i\leqslant j\leqslant k$.
+\end{enumerate}
+Then the modules $M_i$ and homomorphisms $\mu_{ij}$ are said to form a \textcolor{orange}{direct system} $\bm{M}=(M_i,\mu_{ij})$ over the directed set $I$.
+	
+Let $D$ be the submodule of $\bigoplus M_i$ generated by all elements of the form $x_i-\mu_{ij}(x_i)$ whenever $i\leqslant j$ and $x_i\in M_i$. The \textcolor{orange}{direct limit} of the direct system $\bm{M}$ is defined to be
+\begin{equation*}
+		\varinjlim M_i=\left.\bigoplus_{i\in I}M_i\middle/D\right..
+\end{equation*}
+	
+Let $\mu:\bigoplus M_i\rightarrow\varinjlim M_i$ be the projection of quotient module. Define $\mu_i$ to be the restriction of $\mu$ to $M_i$.
+\end{definition}
+
+\begin{definition}
+	A ring $A$ (not necessarily commutative) is \textcolor{orange}{von Neumann regular} if for every $a\in A$, there is an $x\in A$ with $a=axa$. A commutative ring $A$ is \textcolor{orange}{absolutely flat} if every $A$-module is flat. By \Cref{ex2.27}, absolute flat and von Neumann regular are identical properties.
+\end{definition}

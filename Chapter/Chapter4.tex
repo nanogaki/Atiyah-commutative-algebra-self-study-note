@@ -1,0 +1,59 @@
+\chapter{Primary Decomposition}
+
+\section*{PRIMARY IDEALS}
+
+\begin{definition}
+	An ideal $\mathfrak{q}\in A$ is \textcolor{orange}{primary} if $\mathfrak{q}\neq A$ and if either
+	\begin{enumerate}[label=\textup{(\roman*)}]
+		\item $x\notin\mathfrak{q}\Longrightarrow y^n\in\mathfrak{q}$ for some $n>0$;
+		\item $x\notin\sqrt{\mathfrak{q}}\Longrightarrow y\in\mathfrak{q}$.
+	\end{enumerate}
+\end{definition}
+
+\begin{proposition}{4.4}
+	Let $\mathfrak{q}$ be a $\mathfrak{p}$-primary ideal, $x\in A$ an element. Then
+	\begin{enumerate}[label=\textup{(\roman*)}]
+		\item if $x\in\mathfrak{q}$ then $(\mathfrak{q}:x)=(1)$;
+		\item if $x\notin\mathfrak{q}$ then $(\mathfrak{q}:x)$ is $\mathfrak{p}$-primary;
+		\item if $x\notin\mathfrak{p}$ then $(\mathfrak{q}:x)=\mathfrak{q}$;
+	\end{enumerate}
+\end{proposition}
+
+\begin{proposition}{4.8}
+	Let $S$ be a multiplicatively closed subset of $A$, and let $\mathfrak{q}$ be a $\mathfrak{p}$-primary ideal.
+	\begin{enumerate}[label=\textup{(\roman*)}]
+		\item If $S\cap\mathfrak{p}\neq\varnothing$, then $S^{-1}\mathfrak{q}=S^{-1}A$.
+		\item If $S\cap\mathfrak{p}=\varnothing$, then $S^{-1}\mathfrak{q}$ is $S^{-1}\mathfrak{p}$-primary and its contraction in $A$ is $\mathfrak{q}$.
+	\end{enumerate}
+\end{proposition}
+
+\section*{UNIQUENESS}
+
+\begin{proposition}{4.5}[1st uniqueness theorem]
+	Let $\mathfrak{a}$ be a decomposable ideal and let $\mathfrak{a}=\bigcap_{i=1}^n\mathfrak{q}_i$ be a minimal primary decomposition of $\mathfrak{a}$. Let $\mathfrak{p}_i=\sqrt{\mathfrak{q}_i}$. Then $\mathfrak{p}_i$ are precisely the prime ideals which occur in the set of ideals $\sqrt{(\mathfrak{a}:x)}$, and hence are independent of the particular decomposition of $\mathfrak{a}$.
+\end{proposition}
+
+The prime ideals $\mathfrak{p}_i$ are said to belong to $\mathfrak{a}$, or to be \textcolor{orange}{associated} with $\mathfrak{a}$. The minimal elements of the set $\left\{\mathfrak{p}_1,\cdots,\mathfrak{p}_n\right\}$ are called the minimal or \textcolor{orange}{isolated} prime ideals belonging to $\mathfrak{a}$. The others are called \textcolor{orange}{embedded} prime ideals.
+
+\begin{proposition}{4.9}
+	Let $S$ be a multiplicatively closed subset of $A$ and let $\mathfrak{a}$ be a decomposable ideal. Let $\mathfrak{a}=\bigcap_{i=1}^n\mathfrak{q}_i$ be a minimal primary decomposition of $\mathfrak{a}$. Let $\mathfrak{p}_i=\sqrt{\mathfrak{q}_i}$ and suppose the $\mathfrak{q}_i$ numbered so that $S$ meets $\mathfrak{p}_{m+1},\cdots,\mathfrak{p}_n$ but not $\mathfrak{p}_1,\cdots\mathfrak{p}_m$. Then we have minimal primary decompositions
+	\begin{equation*}
+		S^{-1}\mathfrak{a}=\bigcap_{i=1}^mS^{-1}\mathfrak{q}_i,\qquad S(\mathfrak{a})=\bigcap_{i=1}^m\mathfrak{q}_i.
+	\end{equation*}
+\end{proposition}
+
+A set $\Sigma$ of prime ideals belonging to $\mathfrak{a}$ is said to be \textcolor{orange}{isolated} if it satisfies the following condition: if $\mathfrak{p}^\prime$ is a prime ideal beloning to $\mathfrak{a}$ and $\mathfrak{p}^\prime\subseteq\mathfrak{p}$ for some $\mathfrak{p}\in\Sigma$, then $\mathfrak{p}^\prime\in\Sigma$. Thus, every isolated set contains an isolated prime ideal.
+
+\begin{proposition}{4.10}[2nd uniqueness theorem]
+	Let $\mathfrak{a}$ be a decomposable ideal, let $\mathfrak{a}=\bigcap_{i=1}^n\mathfrak{q}_i$ be a minimal primary decomposition of $\mathfrak{a}$, and let $\left\{\mathfrak{p}_{i_1},\cdots,\mathfrak{p}_{i_m}\right\}$ be an isolated set of prime ideals of $\mathfrak{a}$. Then the ideal $\mathfrak{q}_{i_1}\cap\cdots\cap\mathfrak{q}_{i_m}$ is independent of the decomposition.
+\end{proposition}
+
+\begin{corollary}{4.11}
+	The isolated primary components are uniquely determined by $\mathfrak{a}$.
+\end{corollary}
+
+\section*{DEFINITIONS AND PROPOSITIONS FROM EXERCISES}
+
+\begin{definition}
+	Let $A$ be a ring and $\mathfrak{p}$ a prime ideal of $A$. The $n$th \textcolor{orange}{symbolic power} of $\mathfrak{p}$ is defined to be the ideal $\mathfrak{p}^{(n)}=S_\mathfrak{p}\left(\mathfrak{p}^n\right)$.
+\end{definition}

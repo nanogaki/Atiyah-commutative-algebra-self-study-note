@@ -1,0 +1,168 @@
+\chapter{Completion}
+
+\section*{TOPOLOGIES AND COMPLETIONS}
+A \textcolor{orange}{topological abelian group} $G$ is both a topological space and an abelian group, with two structural mappings
+\begin{equation*}
+	\begin{aligned}
+		G\times G&\rightarrow G:&(x,y)&\mapsto x+y\\
+		G&\rightarrow G:&x&\mapsto-x
+	\end{aligned}
+\end{equation*}
+being continuous.
+
+If $\{0\}$ is closed in $G$, then $G$ is Hausdorff.
+
+Since $T_a(x)=x+a$ is a homeomorphism, the topology of $G$ is uniquely determined by the neighborhoods of 0 in $G$.
+
+\begin{proposition}{10.1}
+	Let $H$ be the intersection of all neighborhoods of 0 in $G$. Then
+	\begin{enumerate}[label=\textup{(\roman*)}]
+		\item $H$ is a subgroup.
+		\item $H$ is the closure of $\{0\}$.
+		\item $G/H$ is Hausdorff.
+		\item $G$ is Hausdorff $\Leftrightarrow$ $H=0$.
+	\end{enumerate}
+\end{proposition}
+
+Assume that $0\in G$ has a countable fundamental system of neighborhoods. A \textcolor{orange}{Cauchy sequence} $(x_\nu)$ of $G$ is that, for any neighborhood $U$ of 0, there exists an integer $s(U)$ such that $x_m-x_n\in U$ for all $m,n\geqslant s(U)$.
+
+Let $C(G)$ be the set of all Cauchy sequences in $G$. Define an equivalence relation $\sim$ on $C(G)$ where $(x_\nu)\sim(y_\nu)$ means $x_n-y_n\rightarrow0$ in $G$. The \textcolor{orange}{completion} $\hat{G}$ of $G$ is the set of all equivalence classes in $C(G)/\mathord{\sim}$.
+
+For each $x\in G$, define a homomorphism $\phi:G\rightarrow\hat{G}$ maps to a constant sequence $(x)$. Then $\phi$ is injective iff $G$ is Hausdorff.
+
+\bigskip
+
+Assume further that $0\in G$ has a fundamental system of neighborhoods consisting of a sequence of subgroups
+\begin{equation*}
+	G=G_0\supseteq G_1\supseteq\cdots\supseteq G_n\supseteq\cdots.
+\end{equation*}
+For any $(x_\nu)\in C(G)$ and a fixed $n$, the image sequence $(\xi_\nu+G_n)$ in $G/G_n$ is ultimately constant. Let $\xi_n$ be this ultimate constant value.
+
+As $n$ varies, the projection $\theta_{n+1}:G/G_{n+1}\rightarrow G/G_n$ satisfies $\theta_{n+1}\left(\xi_{n+1}\right)=\xi_n$ for all $n$. The groups $G/G_n$ combined with maps $\theta_n$ form an \textbf{inverse system}, and the group of all such coherent sequences $(\xi_\nu)$ is called the \textbf{inverse limit}, denoted as
+\begin{equation*}
+	\hat{G}=\varprojlim G/G_n.
+\end{equation*}
+
+A direct (or inverse) system is called \textcolor{orange}{injective}/\textcolor{orange}{surjective system}, if every transition map $\mu_{ij}$ is injective/surjective.
+
+\begin{proposition}{10.2}
+	If $0\rightarrow\left\{A_n\right\}\rightarrow\left\{B_n\right\}\rightarrow\left\{C_n\right\}\rightarrow0$ is an exact sequence of inverse system, then
+	\begin{equation*}
+		0\rightarrow\varprojlim A_n\rightarrow\varprojlim B_n\rightarrow\varprojlim C_n
+	\end{equation*}
+	is exact. If $\left\{A_n\right\}$ is surjective, then
+	\begin{equation*}
+		0\rightarrow\varprojlim A_n\rightarrow\varprojlim B_n\rightarrow\varprojlim C_n\rightarrow0
+	\end{equation*}
+	is exact.
+\end{proposition}
+
+\begin{corollary}{10.3}
+	Let $0\rightarrow G^\prime\rightarrow G\rightarrow G^{\prime\prime}\rightarrow0$ be an exact sequence of groups. Let $G$ have the topology defined by a sequence $\left\{G_n\right\}$ of subgroups, and give $G^\prime$ and $G^{\prime\prime}$ the topologies by the contraction and extension of $\left\{G_n\right\}$, respectively. Then
+	\begin{equation*}
+		0\rightarrow\hat{G^\prime}\rightarrow\hat{G}\rightarrow\hat{G^{\prime\prime}}\rightarrow0
+	\end{equation*}
+	is exact.
+\end{corollary}
+
+\begin{corollary}{10.4}
+	$\hat{G_n}$ is a subgroup of $\hat{G}$ and $\hat{G}/\hat{G_n}\cong G/G_n$.
+\end{corollary}
+
+\begin{corollary}{10.5}
+	$\hat{\hat{G_n}}\cong\hat{G_n}$.
+\end{corollary}
+
+If $G\rightarrow\hat{G}$ is an isomorphism, $G$ is said to be \textcolor{orange}{complete}.
+
+\bigskip
+
+Let $A$ be a ring, $\mathfrak{a}$ its ideal. The topology defined by $G_n=\mathfrak{a}^n$ ($G_0=A$) is called the \textcolor{orange}{$\mathfrak{a}$-adic topology}, and the ring $A$ combined with this topology is a \textcolor{orange}{topological ring}.
+
+\section*{FILTRATIONS}
+
+A chain $M=M_0\supseteq M_1\supseteq\cdots\supseteq M_n\cdots$ is called a \textcolor{orange}{filtration} of $M$, and denoted by $\left(M_n\right)$. It is an \textcolor{orange}{$\mathfrak{a}$-filtration} if $\mathfrak{a}M_n\subseteq M_{n+1}$ for all $n$, and a \textcolor{orange}{stable $\mathfrak{a}$-filtration} if $\mathfrak{a}M_n=M_{n+1}$ for all sufficiently large $n$.
+
+The \textcolor{orange}{$\mathfrak{a}$-adic completion} of $M$ is defined to be
+\begin{equation*}
+	\hat{M}=\varprojlim M/\mathfrak{a}^nM.
+\end{equation*}
+
+\section*{GRADED RINGS AND MODULES}
+
+A \textcolor{orange}{graded ring} is a ring $A$ together with a family $\left(A_n\right)_{n\geqslant0}$ of additive subgroups of $A$, such that $A=\bigoplus_{n=0}^{\infty}A_n$ and $A_mA_n\subseteq A_{m+n}$ for all $m,n\geqslant0$.
+
+\begin{proposition}{10.7}
+	A graded ring $A$ is Noetherian, iff $A_0$ is Noetherian and $A$ is finitely generated as an $A_0$-algebra.
+\end{proposition}
+
+\begin{proposition}{10.9}[Artin-Rees lemma]
+	Let $A$ be a Noetherian ring, $\mathfrak{a}$ and ideal in $A$, $M$ a finitely-generated $A$-module, $\left(M_n\right)$ a stable $\mathfrak{a}$-filtration of $M$. If $M^\prime$ is a submodule of $M$, then $\left(M^\prime\cap M_n\right)$ is a stable $\mathfrak{a}$-filtration of $M^\prime$.
+\end{proposition}
+
+\begin{proposition}{10.12}
+	Let $0\rightarrow M^\prime\rightarrow M\rightarrow M^{\prime\prime}\rightarrow0$ be an exact sequence of finitely-generated modules over a Noetherian ring $A$, then the sequence of $\mathfrak{a}$-adic completion $0\rightarrow\hat{M^\prime}\rightarrow\hat{M}\rightarrow\hat{M^{\prime\prime}}\rightarrow0$ is exact.
+\end{proposition}
+
+\begin{proposition}{10.13}
+	If $M$ is finitely-generated $A$-module, $\hat{A}\otimes_AM\rightarrow\hat{M}$ is surjective. If $A$ is Noetherian, then $\hat{A}\otimes_AM\rightarrow\hat{M}$ is an isomorphism.
+\end{proposition}
+
+\begin{proposition}{10.14}
+	If $A$ is a Noetherian ring, the $\mathfrak{a}$-adic completion $\hat{A}$ is a flat $A$-algebra.
+\end{proposition}
+
+\begin{proposition}{10.15}
+	If $A$ is a Noetherian ring, $\hat{A}$ its $\mathfrak{a}$-adic completion, then
+	\begin{enumerate}[label=\textup{(\roman*)}]
+		\item $\hat{\mathfrak{a}}=\hat{A}\mathfrak{a}\cong\hat{A}\otimes_A\mathfrak{a}$;
+		\item $\widehat{\left(\mathfrak{a}^n\right)}=\left(\hat{\mathfrak{a}}\right)^n$;
+		\item $\hat{\mathfrak{a}}^n/\hat{\mathfrak{a}}^{n+1}\cong\mathfrak{a}^n/\mathfrak{a}^{n+1}$;
+		\item $\hat{\mathfrak{a}}$ is contained in the Jacobson radical of $\hat{A}$.
+	\end{enumerate}
+\end{proposition}
+
+\begin{proposition}{10.16}
+	Let $A$ be a Noetherian local ring, $\mathfrak{m}$ its maximal ideal. Then the $\mathfrak{m}$-adic completion $\hat{A}$ of $A$ is a local ring with maximal ideal $\hat{\mathfrak{m}}$.
+\end{proposition}
+
+\begin{proposition}{10.17}[Kull's theorem]
+	Let $A$ be a Noetherian ring, $\mathfrak{a}$ an ideal, $M$ a finitely-generated $A$-module and $\hat{M}$ the $\mathfrak{a}$-adic completion of $M$. Then the kernel $E=\bigcap_{n=1}^\infty\mathfrak{a}^nM$ of $M\rightarrow\hat{M}$ consists of those $x\in M$ annihilated by some element of $1+\mathfrak{a}$.
+\end{proposition}
+
+\section*{THE ASSOCIATED GRADED RING}
+
+Let $A$ be a ring and $\mathfrak{a}$ an ideal of $A$. The \textcolor{orange}{associated graded ring} is the graded ring
+\begin{equation*}
+	G(A)\left(=G_\mathfrak{a}(A)\right)=\bigoplus_{n=0}^\infty\mathfrak{a}^n/\mathfrak{a}^{n+1}\qquad(a^0=A).
+\end{equation*}
+
+Similarly, if $M$ is an $A$-module and $\left(M_n\right)$ is an $\mathfrak{a}$-filtration of $M$, then the \textcolor{orange}{associated graded module} is
+\begin{equation*}
+	G(M)=\bigoplus_{n=0}^\infty M_n/M_{n+1},
+\end{equation*}
+which is a graded $G(A)$-module. Let $G_n(M)=M_n/M_{n+1}$.
+
+\begin{proposition}{10.22}
+	Let $A$ be a Noetherian ring, $\mathfrak{a}$ an ideal of $A$. Then
+	\begin{enumerate}[label=\textup{(\roman*)}]
+		\item $G_\mathfrak{a}(A)$ is Noetherian;
+		\item $G_\mathfrak{a}(A)$ and $G_{\hat{\mathfrak{a}}}(\hat{A})$ are isomorphic as graded rings;
+		\item If $M$ is a finitely-generated $A$-module and $\left(M_n\right)$ is a stable $\mathfrak{a}$-filtration of $M$, then $G(M)$ is a finitely-generated graded $G_\mathfrak{a}(A)$-module.
+	\end{enumerate}
+\end{proposition}
+
+\begin{proposition}{10.23}
+	Let $\phi:A\rightarrow B$ be a homomorphism of filtered groups, i.e. $\phi(A_n)\subseteq B_n$, and let $G(\phi):G(A)\rightarrow G(B)$, $\hat{\phi}:\hat{A}\rightarrow\hat{B}$ be the induced homomorphisms of the associated graded and completed groups. Then
+	\begin{enumerate}[label=\textup{(\roman*)}]
+		\item $G(\phi)$ injective $\Rightarrow$ $\hat{\phi}$ injective;
+		\item $G(\phi)$ surjective $\Rightarrow$ $\hat{\phi}$ surjective.
+	\end{enumerate}
+\end{proposition}
+
+\begin{proposition}{10.26}
+	If $A$ is a Noetherian ring, $\mathfrak{a}$ an ideal of $A$, then the $\mathfrak{a}$-adic completion $\hat{A}$ of $A$ is Noetherian.
+\end{proposition}
+
+
+
