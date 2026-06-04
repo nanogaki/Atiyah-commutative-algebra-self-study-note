@@ -39,7 +39,7 @@ An $A$-module is \textcolor{orange}{faithful} if $\operatorname{Ann}(M)=0$.
 			&N^{\prime\prime}\arrow[r]&0
 	\end{tikzcd}
 	\end{equation*}
-	be a commutative diagram of $A-$modules and homomorphisms, with the rows exact. Then there exists an exact sequence
+	be a commutative diagram of $A$-modules and homomorphisms, with the rows exact. Then there exists an exact sequence
 
 	\begin{equation*}
 		0\longrightarrow\ker\left(f^\prime\right)\xrightarrow{\;\overline{u}\;}\ker(f)\xrightarrow{\;\overline{v}\;}\ker\left(f^{\prime\prime}\right)\xrightarrow{\;\delta\;}
@@ -82,16 +82,16 @@ An $A$-module is \textcolor{orange}{faithful} if $\operatorname{Ann}(M)=0$.
 
 Let M be an $A$-module and $f: A\rightarrow B$ be a homomorphism of rings. Define $\mathcolor{orange}{M_B}=B\otimes_AM$.
 
-If the functor $T_N:M\mapsto M\otimes_AN$ on the category of $A$-modules is exact, then $N$ is said to be a \textcolor{orange}{flat} $A$-module.
-
 \begin{proposition}{2.19}
 	For an $A$-module $N$, the following are equivalent:
 	\begin{enumerate}[label=\textup{(\roman*)},ref=\thepropositiontemp(\roman*)]\crefalias{enumi}{proposition}
-		\item $N$ is flat.
+		\item The functor $T_N:M\mapsto M\otimes_AN$ on the category of $A$-modules is exact.
 		\item If $0\rightarrow M^\prime\rightarrow M\rightarrow M^{\prime\prime}\rightarrow0$ is any exact sequence of $A$-modules, then $0\rightarrow M^\prime\otimes N\rightarrow M\otimes N\rightarrow M^{\prime\prime}\otimes N\rightarrow0$ is exact.
 		\item If $f:M^\prime\rightarrow M$ is injective, then $f\otimes1:M^\prime\otimes N\rightarrow M\otimes N$ is injective.
 		\item\label{2.19.4} If $f:M^\prime\rightarrow M$ is injective and $M$, $M^\prime$ are finitely generated, then $f\otimes1:M^\prime\otimes N\rightarrow M\otimes N$ is injective.
 	\end{enumerate}
+	
+	An $A$-module $N$ satisfying these properties is said to be a \textcolor{orange}{flat} $A$-module.
 \end{proposition}
 
 \section*{ALGEBRA}

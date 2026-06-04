@@ -12,17 +12,7 @@
 
 \section*{LOCAL PROPERTIES}
 
-\begin{proposition*}
-	Let $P$ be a property of a ring $A$ (or of an $A$-module $M$). Then the following are equivalent:
-	\begin{enumerate}[label=\textup{(\roman*)}]
-		\item $A$ (or $M$) has $P$ $\Leftrightarrow$ $A_\mathfrak{p}$ (or $M_\mathfrak{p}$) has $P$ for each prime ideal $\mathfrak{p}$ of $A$;
-		\item $A$ (or $M$) has $P$ $\Leftrightarrow$ $A_\mathfrak{m}$ (or $M_\mathfrak{m}$) has $P$ for each maximal ideal $\mathfrak{m}$ of $A$.
-	\end{enumerate}
-	The property $P$ is said to be a \textcolor{orange}{local property}.
-	\begin{proof}
-		$\left(A_\mathfrak{p}\right)_{\mathfrak{m}A_\mathfrak{p}}\cong A_\mathfrak{m}$
-	\end{proof}
-\end{proposition*}
+Let $P$ be a property of a ring $A$ (or of an $A$-module $M$). Then the property $P$ is said to be a \textcolor{orange}{local property}, if $A$ (or $M$) has $P$ $\Leftrightarrow$ $A_\mathfrak{p}$ (or $M_\mathfrak{p}$) has $P$ for each prime ideal $\mathfrak{p}$ of $A$.
 
 \begin{proposition}{3.8}
 	Let $M$, $N$ be $A$-modules. Then the following are equivalent:
@@ -44,17 +34,21 @@
 
 \section*{EXTENSIONS AND CONTRACTIONS OF FRACTIONS}
 
-If $\mathfrak{a}$ is an ideal in $A$, its extension $\mathfrak{a}^e$ in $S^{-1}A$ is $S^{-1}\mathfrak{a}$. Denote the contraction of $S^{-1}\mathfrak{a}$ in $A$ to be $S(\mathfrak{a})$.
+If $\mathfrak{a}$ is an ideal in $A$, its extension $\mathfrak{a}^e$ in $S^{-1}A$ is $S^{-1}\mathfrak{a}$. Denote the contraction of $S^{-1}\mathfrak{a}$ in $A$ to be \textcolor{orange}{$S(\mathfrak{a})$}.
 
 \begin{proposition}{3.11}
-	\begin{enumerate}[label=\textup{(\roman*)}]
-		\item Every ideal in $S^{-1}A$ is an extended ideal.
-		\item If $\mathfrak{a}$ is an ideal in $A$, then $\mathcolor{orange}{S(\mathfrak{a})}=\mathfrak{a}^{ec}=\bigcup_{s\in S}(\mathfrak{a}:s)$.
-		\item $\mathfrak{a}$ is a contracted ideal $\Leftrightarrow$ no element of $S$ is a zero-divisor in $A/\mathfrak{a}$.
-		\item Them prime ideal of $S^{-1}A$ are in one-to-one correspondence ($\mathfrak{p}\leftrightarrow S^{-1}\mathfrak{p}$) with the prime ideal of $A$ which don't meet $S$.
-		\item The operation $S^{-1}$ commutes with formation of finite sums, products, intersections and radicals.
+	\begin{enumerate}[label=\textup{(\roman*)},ref=\thepropositiontemp(\roman*)]\crefalias{enumi}{proposition}
+		\item\label{3.11.1} Every ideal in $S^{-1}A$ is an extended ideal.
+		\item\label{3.11.2} If $\mathfrak{a}$ is an ideal in $A$, then $S(\mathfrak{a})=\mathfrak{a}^{ec}=\bigcup_{s\in S}(\mathfrak{a}:s)$.
+		\item\label{3.11.3} $\mathfrak{a}$ is a contracted ideal $\Leftrightarrow$ no element of $S$ is a zero-divisor in $A/\mathfrak{a}$.
+		\item\label{3.11.4} Them prime ideal of $S^{-1}A$ are in one-to-one correspondence ($\mathfrak{p}\leftrightarrow S^{-1}\mathfrak{p}$) with the prime ideal of $A$ which don't meet $S$.
+		\item\label{3.11.5} The operation $S^{-1}$ commutes with formation of finite sums, products, intersections and radicals.
 	\end{enumerate}
 \end{proposition}
+
+\begin{corollary}{3.15}
+	If $N$, $P$ are submodules of an $A$-module $M$ and if $P$ is finitely generated, then $S^{-1}(N:P)=\left(S^{-1}N:S^{-1}P\right)$.
+\end{corollary}
 
 \section*{DEFINITIONS AND PROPOSITIONS FROM EXERCISES}
 
@@ -67,6 +61,10 @@ If $\mathfrak{a}$ is an ideal in $A$, its extension $\mathfrak{a}^e$ in $S^{-1}A
 
 \begin{definition}
 	Let $M$ be an $A$-module. An element $x\in M$ is a \textcolor{orange}{torsion} element of $M$ if there exist a non-zero-divisor $a\in A$ such that $ax=0$. All torsion elements of $M$ form a submodule of $M$, which is called the \textcolor{orange}{torsion submodule} of $M$ and denote by $T(M)$. If $T(M)=0$, the module $M$ is said to be \textcolor{orange}{torsion free}.
+\end{definition}
+
+\begin{definition}
+	An $A$-module $M$ is called \textcolor{orange}{faithfully flat} if the tensor product functor $-\otimes_AM$ is exact and faithful. See \Cref{ex3.16}.
 \end{definition}
 
 \begin{definition}
