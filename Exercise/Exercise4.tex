@@ -32,7 +32,7 @@
 \end{exercise}
 
 \begin{exercise}\label{ex4.8}
-	$k\left[x_1,\cdots,x_n\right]/\mathfrak{p_i}=k\left[x_{i+1},\cdots,x_n\right]$ integer domain, so $\mathfrak{p}_i$ prime. Note that $\mathfrak{p}_i^n$ is the set of all homogeneous polynomials in $k\left[x_1,\cdots,x_i\right]$ of degree $\geqslant n$. Use the fact that $fg$ is homogeneous $\Rightarrow$ $f$ and $g$ are homogeneous.
+	$k\left[x_1,\cdots,x_n\right]/\mathfrak{p_i}=k\left[x_{i+1},\cdots,x_n\right]$ integer domain, so $\mathfrak{p}_i$ prime. Note that $\mathfrak{p}_i^n$ is the set of all homogeneous polynomials in $k\left[x_1,\cdots,x_i\right]$ of degree $\geqslant n$.
 \end{exercise}
 
 \begin{exercise}\label{ex4.9}
@@ -51,7 +51,7 @@
 
 \begin{exercise}\label{ex4.11}
 	Note that $x\in S(\mathfrak{a})$ $\Leftrightarrow$ there exists an $s\in S$ such that $sx\in\mathfrak{a}$. Show that $S_\mathfrak{p}(0)$ is contained in all $\mathfrak{p}$-primary ideals.\par
-	If $0=\bigcap\mathfrak{q}_i$ is minimal, $\sqrt{(0)}$ is the intersection of minimal prime ideals.
+	If $0=\bigcap\mathfrak{q}_i$ is irredundant, $\sqrt{(0)}$ is the intersection of minimal prime ideals.
 \end{exercise}
 
 \begin{exercise}\label{ex4.12}
@@ -72,7 +72,7 @@
 \end{exercise}
 
 \begin{exercise}\label{ex4.15}
-	
+	Use \Cref{4.9}.
 \end{exercise}
 
 \begin{exercise}\label{ex4.16}
@@ -80,7 +80,7 @@
 \end{exercise}
 
 \begin{exercise}\label{ex4.17}
-	Use hint.
+	
 \end{exercise}
 
 \begin{exercise}\label{ex4.18}
@@ -91,7 +91,9 @@
 \end{exercise}
 
 \begin{exercise}\label{ex4.19}
-	Use hint.
+	Similar to the proof of \Cref{ex4.11}.
+	
+	The goal is to proof that there exists $\mathfrak{a}=\bigcap_{i=1}^n\mathfrak{q}_i$ irredundant, so we need to proof $\mathfrak{q}_i\nsupseteq\bigcap_{j\neq i}\mathfrak{q}_j$. Using the fact that $\mathfrak{uv}\subseteq\mathfrak{q}$ but $\mathfrak{u}\nsubseteq\mathfrak{q}$ $\Rightarrow$ $\mathfrak{v}\subseteq\mathfrak{p}$, we can assume $\mathfrak{b}=\bigcap_{i=1}^{n-1}\mathfrak{q}_i$ irredundant and $\mathfrak{p}_n$ maximal among $\left\{\mathfrak{p}_i\right\}$, so we only need to find $\mathfrak{q}_n\nsupseteq\mathfrak{b}$. If such $\mathfrak{q}_n$ doesn't exist, $\mathfrak{b}\subseteq S_{\mathfrak{p}_n}(0)$. Pick a minimal prime ideal $\mathfrak{p}\subseteq\mathfrak{p}_n$ and use \Cref{ex4.10} and \Cref{1.11.2}.
 \end{exercise}
 
 \begin{exercise}\label{ex4.20}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.29)  4 JUN 2026 12:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.29)  7 JUN 2026 06:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -738,7 +738,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 64.
+(scrbook)           before \begin{document} on input line 66.
 (D:\Program Files\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 
@@ -749,34 +749,34 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )) (Note.aux)
 \openout1 = `Note.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-Package scrbase Info: activating english \partname on input line 64.
-Package scrbase Info: activating english \chaptername on input line 64.
-Package scrbase Info: activating english \appendixname on input line 64.
-Package scrbase Info: activating english \figurename on input line 64.
-Package scrbase Info: activating english \tablename on input line 64.
-Package scrbase Info: activating english \contentsname on input line 64.
-Package scrbase Info: activating english \listfigurename on input line 64.
-Package scrbase Info: activating english \listtablename on input line 64.
-Package scrbase Info: activating english \bibname on input line 64.
-Package scrbase Info: activating english \indexname on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+Package scrbase Info: activating english \partname on input line 66.
+Package scrbase Info: activating english \chaptername on input line 66.
+Package scrbase Info: activating english \appendixname on input line 66.
+Package scrbase Info: activating english \figurename on input line 66.
+Package scrbase Info: activating english \tablename on input line 66.
+Package scrbase Info: activating english \contentsname on input line 66.
+Package scrbase Info: activating english \listfigurename on input line 66.
+Package scrbase Info: activating english \listtablename on input line 66.
+Package scrbase Info: activating english \bibname on input line 66.
+Package scrbase Info: activating english \indexname on input line 66.
 
 (D:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -841,7 +841,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 64.
+Package hyperref Info: Link coloring ON on input line 66.
 (Chapter/Chapter1.tex
 chapter 1.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
@@ -915,19 +915,19 @@ t/10.95 = [][] []$\OT1/cmr/m/it/10.95 ,
 
 ]) (Exercise/Exercise2.tex [20])
 (Exercise/Exercise3.tex [21] [22]) (Exercise/Exercise4.tex [23])
-(Exercise/Exercise5.tex [24]) (Exercise/Exercise6.tex [25])
-(Exercise/Exercise7.tex [26]) (Exercise/Exercise8.tex) (Exercise/Exercise9.tex)
-(Exercise/Exercise10.tex) (Exercise/Exercise11.tex) [27] (Note.aux)
+(Exercise/Exercise5.tex [24] [25]) (Exercise/Exercise6.tex [26])
+(Exercise/Exercise7.tex) (Exercise/Exercise8.tex [27]) (Exercise/Exercise9.tex)
+(Exercise/Exercise10.tex) (Exercise/Exercise11.tex) [28] (Note.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 28961 strings out of 467870
- 569313 string characters out of 5428425
- 1102453 words of memory out of 5000000
- 56935 multiletter control sequences out of 15000+600000
+ 29115 strings out of 467870
+ 571569 string characters out of 5428425
+ 1105452 words of memory out of 5000000
+ 57073 multiletter control sequences out of 15000+600000
  639534 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,15n,121p,11233b,1144s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -949,9 +949,9 @@ e1/public/amsfonts/euler/eufm10.pfb><D:/Program Files/MiKTeX/fonts/type1/public
 /amsfonts/euler/eufm7.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
 symbols/msam10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols
 /msbm10.pfb>
-Output written on Note.pdf (27 pages, 428328 bytes).
+Output written on Note.pdf (28 pages, 443078 bytes).
 PDF statistics:
- 909 PDF objects out of 1000 (max. 8388607)
- 429 named destinations out of 1000 (max. 500000)
+ 953 PDF objects out of 1000 (max. 8388607)
+ 445 named destinations out of 1000 (max. 500000)
  189 words of extra memory for PDF output out of 10000 (max. 10000000)
 

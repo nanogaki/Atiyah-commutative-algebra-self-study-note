@@ -21,6 +21,7 @@
 }
 \usepackage[nameinlink]{cleveref}
 
+% Create proposition/theorem style in main content
 \newcommand{\CreateManualEnv}[2]{%
 	% 1. Create the underlying amsthm environment
 	\newtheorem{#1temp}{#2}
@@ -37,13 +38,13 @@
 			\end{#1temp}
 		}
 	}
-
 \CreateManualEnv{theorem}{Theorem}
 \CreateManualEnv{proposition}{Proposition}
 \CreateManualEnv{corollary}{Corollary}
 \newtheorem*{proposition*}{Proposition}
 \renewcommand{\proofname}{Sketch proof}
 
+% Create definition style. Only for vertical separation.
 \newtheoremstyle{noperiod}% name of the style
 {\topsep}%             Space above
 {\topsep}%             Space below
@@ -56,6 +57,7 @@
 \theoremstyle{noperiod}
 \newtheorem*{definition}{}
 
+% Create exercise style
 \theoremstyle{definition}
 \newtheorem{exercise}{}[section]
 
@@ -100,5 +102,4 @@
 	\input{Exercise/Exercise9}
 	\input{Exercise/Exercise10}
 	\input{Exercise/Exercise11}
-	\newpage
 \end{document}
