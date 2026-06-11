@@ -107,7 +107,7 @@
 
 \begin{exercise}\label{ex5.23}
 	\begin{enumerate}
-		\item[(i) $\Rightarrow$ (ii)] Note that $f:A\rightarrow A/\operatorname{ker}f$. Use \Cref{1.1}.
+		\item[(i) $\Rightarrow$ (ii)] Note that $f:A\rightarrow A/\ker f$. Use \Cref{1.1}.
 		\item[(ii) $\Rightarrow$ (iii)] Consider $A/\mathfrak{p}$.
 		\item[(iii) $\Rightarrow$ (i)] If $\mathfrak{p}$ is not an intersection of maximal ideals, the Jacobson radical $\mathfrak{J}$ of $A/\mathfrak{p}$ is not zero. Pick $f\in\mathfrak{J}$, then $(A/\mathfrak{p})_f\neq0$. The contraction of a maximal ideal of $(A/\mathfrak{p})_f$ is $\mathfrak{q}\in A$ which is not maximal and doesn't contain $f$, but all prime ideals strictly containing $\mathfrak{q}$ contains $f$.
 	\end{enumerate}
@@ -115,19 +115,22 @@
 
 \begin{exercise}\label{ex5.24}
 	\begin{enumerate}[label=(\roman*),ref=\theexercise(\roman*)]\crefalias{enumi}{exercise}
-		\item Use \hyperref[ex5.23]{\Cref{ex5.23}(iii)} and \hyperref[5.11]{going-up theorem}.
-		\item Consider $B/\mathfrak{q}$ and $A/\mathfrak{q}^c$. Then use \Cref{ex5.22}, \hyperref[ex5.23]{\Cref{ex5.23}(i)} and \Cref{1.1}.
+		\item Use \hyperref[ex5.23]{\Cref*{ex5.23}(iii)} and \hyperref[5.11]{going-up theorem}.
+		\item Consider $B/\mathfrak{q}$ and $A/\mathfrak{q}^c$. Then use \Cref{ex5.22}, \hyperref[ex5.23]{\Cref*{ex5.23}(i)} and \Cref{1.1}.
 	\end{enumerate}
 \end{exercise}
 
 \begin{exercise}\label{ex5.25}
-	Hint.
+	\begin{enumerate}
+		\item[(i) $\Rightarrow$ (ii)] 
+		\item[(ii) $\Rightarrow$ (i)] 
+	\end{enumerate}
 \end{exercise}
 
 \begin{exercise}\label{ex5.26}
 	\begin{enumerate}
 		\item[(2) $\Rightarrow$ (3)] $U_1\cap X_0=U_2\cap X_0$ $\Rightarrow$ $U_1^c\cap X_0=U_2^c\cap X_0$, then take closure.
-		\item[(i) $\Rightarrow$ (ii) $\Rightarrow$ (iii)] Consider $V(\mathfrak{a})\cap X_f\cap\operatorname{Max}(A)$. If all maximal ideals in $V(\mathfrak{a})$ contains $f$, $V(\mathfrak{a})\cap X_f=\varnothing$ by \hyperref[ex5.23]{\Cref{ex5.23}(iii)}.
+		\item[(i) $\Rightarrow$ (ii) $\Rightarrow$ (iii)] Consider $V(\mathfrak{a})\cap X_f\cap\operatorname{Max}(A)$. If all maximal ideals in $V(\mathfrak{a})$ contains $f$, $V(\mathfrak{a})\cap X_f=\varnothing$ by \hyperref[ex5.23]{\Cref*{ex5.23}(iii)}.
 		\item[(iii) $\Rightarrow$ (i)] If not Jacobson, there is a prime ideal $\mathfrak{p}$ such that $\mathfrak{p}\subsetneq\bigcap_{\mathfrak{q}\supseteq\mathfrak{p}}\mathfrak{q}$. Let $f\in\left.\bigcap_{\mathfrak{q}\supseteq\mathfrak{p}}\mathfrak{q}\middle\backslash\mathfrak{p}\right.$, then $X_f\cap V(\mathfrak{p})=\{\mathfrak{p}\}$.
 	\end{enumerate}
 \end{exercise}
@@ -153,11 +156,11 @@
 \begin{exercise}\label{ex5.30}
 	$xy^{-1}\in A$ or $x^{-1}y\in A$, so $\geqslant$ is a total order. Also $(xz)(yz)^{-1}=xy^{-1}$.
 	
-	\textcolor{magenta}{$v$ can be a representation map.} If $v(x)\geqslant v(y)$, $(x+y)y^{-1}=xy^{-1}+1\in A$.
+	\textcolor{magenta}{Treat $v$ as a representation map.} If $v(x)\geqslant v(y)$, $(x+y)y^{-1}=xy^{-1}+1\in A$.
 \end{exercise}
 
 \begin{exercise}\label{ex5.31}
-	Let the set be $A$. Verify $A$ is closed under addition and multiplication. By taking $x=y=1$, $v(1)=0$, so $v(1)=v(x)+v\left(x^{-1}\right)$, and so $A$ is a valuation ring.
+	Use the given conditions to verify the set is closed under addition and multiplication. Then verify it is a valuation ring by taking $x=y=1$ and $y=x^{-1}$ in the first condition.
 \end{exercise}
 
 \begin{exercise}\label{ex5.32}

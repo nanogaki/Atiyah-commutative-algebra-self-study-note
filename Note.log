@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.29)  7 JUN 2026 06:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.29)  11 JUN 2026 08:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -865,39 +865,39 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 chapter 2.
 [3
 
-]) [4] (Chapter/Chapter3.tex
+] [4]) [5] (Chapter/Chapter3.tex
 chapter 3.
-[5
+[6
 
-]) [6] (Chapter/Chapter4.tex
+]) [7] (Chapter/Chapter4.tex
 chapter 4.
-) [7
+) [8
 
 ] (Chapter/Chapter5.tex
 chapter 5.
-[8
+[9
 
-]) [9] (Chapter/Chapter6.tex
+]) [10] (Chapter/Chapter6.tex
 chapter 6.
-) [10
+) [11
 
 ] (Chapter/Chapter7.tex
 chapter 7.
-) [11
+) [12
 
 ] (Chapter/Chapter8.tex
 chapter 8.
-) [12
+) [13
 
 ] (Chapter/Chapter9.tex
 chapter 9.
-) [13
-
-] (Chapter/Chapter10.tex
-chapter 10.
 [14
 
-] [15]) [16] (Chapter/Chapter11.tex
+]) [15] (Chapter/Chapter10.tex
+chapter 10.
+[16
+
+] [17]) [18] (Chapter/Chapter11.tex
 chapter 11.
 
 Overfull \hbox (23.86092pt too wide) in paragraph at lines 11--12
@@ -909,49 +909,55 @@ ion in $\OML/cmm/m/it/10.95 t$ \OT1/cmr/m/it/10.95 of the form $\OML/cmm/m/it/1
 t/10.95 = [][] []$\OT1/cmr/m/it/10.95 ,
  []
 
-[17
+[19
 
-]) [18] (Exercise/Exercise1.tex [19
+]) [20] (Exercise/Exercise1.tex [21
 
-]) (Exercise/Exercise2.tex [20])
-(Exercise/Exercise3.tex [21] [22]) (Exercise/Exercise4.tex [23])
-(Exercise/Exercise5.tex [24] [25]) (Exercise/Exercise6.tex [26])
-(Exercise/Exercise7.tex) (Exercise/Exercise8.tex [27]) (Exercise/Exercise9.tex)
-(Exercise/Exercise10.tex) (Exercise/Exercise11.tex) [28] (Note.aux)
+]) (Exercise/Exercise2.tex [22])
+(Exercise/Exercise3.tex [23] [24]) (Exercise/Exercise4.tex [25])
+(Exercise/Exercise5.tex [26] [27]) (Exercise/Exercise6.tex [28])
+(Exercise/Exercise7.tex [29]) (Exercise/Exercise8.tex) (Exercise/Exercise9.tex)
+(Exercise/Exercise10.tex [30]
+Overfull \hbox (5.82018pt too wide) in paragraph at lines 46--50
+[]\OT1/cmr/m/n/10.95 We con-struct two ho-mo-mor-phisms $[]$. When
+ []
+
+[31]) (Exercise/Exercise11.tex) [32] (Note.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 29115 strings out of 467870
- 571569 string characters out of 5428425
- 1105452 words of memory out of 5000000
- 57073 multiletter control sequences out of 15000+600000
- 639534 words of font info for 80 fonts, out of 8000000 for 9000
+ 29410 strings out of 467870
+ 577014 string characters out of 5428425
+ 1114452 words of memory out of 5000000
+ 57317 multiletter control sequences out of 15000+600000
+ 639875 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 124i,15n,121p,11233b,1144s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Progra
-m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program Files/MiKT
-eX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><D:/Program Files/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Files/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmmi6.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmmi8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb>
-<D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program F
-iles/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Program Files/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program Files/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmsl10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmssbx10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Progr
-am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Program Files/MiKTeX/fonts/typ
-e1/public/amsfonts/euler/eufm10.pfb><D:/Program Files/MiKTeX/fonts/type1/public
-/amsfonts/euler/eufm7.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
-symbols/msam10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb>
-Output written on Note.pdf (28 pages, 443078 bytes).
+ 124i,29n,121p,11233b,1144s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1
+095.pk><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/P
+rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program Files
+/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><D:/Program Files/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Files/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmmi6.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10
+.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Prog
+ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Program Files/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmsl10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmssbx10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/
+Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Program Files/MiKTeX/font
+s/type1/public/amsfonts/euler/eufm10.pfb><D:/Program Files/MiKTeX/fonts/type1/p
+ublic/amsfonts/euler/eufm7.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsf
+onts/symbols/msam10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb>
+Output written on Note.pdf (32 pages, 484212 bytes).
 PDF statistics:
- 953 PDF objects out of 1000 (max. 8388607)
- 445 named destinations out of 1000 (max. 500000)
+ 1076 PDF objects out of 1200 (max. 8388607)
+ 495 named destinations out of 1000 (max. 500000)
  189 words of extra memory for PDF output out of 10000 (max. 10000000)
 

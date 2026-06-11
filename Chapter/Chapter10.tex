@@ -57,6 +57,22 @@ A direct (or inverse) system is called \textcolor{orange}{injective}/\textcolor{
 	is exact.
 \end{proposition}
 
+\begin{definition}\label{deflim1}
+	Let $A=\prod_{i=1}^\infty A_n$ and define $d^A:A\rightarrow A$ by $d^A\left(a_n\right)=a_n-\theta_{n+1}\left(a_{n+1}\right)$. Then $\ker\left(d^A\right)\cong\varprojlim A_n$. Similar to $B$ and $C$, we have a commutative diagram
+\begin{equation*}
+	\begin{tikzcd}
+		0\arrow[r]&A\arrow[r]\arrow[d,"d^A"]&B\arrow[r]\arrow[d,"d^B"]&C\arrow[r]\arrow[d,"d^C"]&0\\
+		0\arrow[r]&A\arrow[r]&B\arrow[r]&C\arrow[r]&0
+	\end{tikzcd}
+\end{equation*}
+By \hyperref[2.10]{Snake lemma}, we have an exact sequence
+\begin{equation*}
+	0\longrightarrow\ker\left(d^A\right)\longrightarrow\ker\left(d^B\right)\longrightarrow\ker\left(d^C\right)\longrightarrow
+	\operatorname{coker}\left(d^A\right)\longrightarrow\operatorname{coker}\left(d^B\right)\longrightarrow\operatorname{coker}\left(d^C\right)\longrightarrow0.
+\end{equation*}
+and the $\operatorname{coker}\left(d^A\right)$ is usually denoted by \textcolor{orange}{$\varprojlim^1A_n$}.
+\end{definition}
+
 \begin{corollary}{10.3}
 	Let $0\rightarrow G^\prime\rightarrow G\rightarrow G^{\prime\prime}\rightarrow0$ be an exact sequence of groups. Let $G$ have the topology defined by a sequence $\left\{G_n\right\}$ of subgroups, and give $G^\prime$ and $G^{\prime\prime}$ the topologies by the contraction and extension of $\left\{G_n\right\}$, respectively. Then
 	\begin{equation*}
@@ -105,7 +121,7 @@ A \textcolor{orange}{graded ring} is a ring $A$ together with a family $\left(A_
 \end{proposition}
 
 \begin{proposition}{10.13}
-	If $M$ is finitely-generated $A$-module, $\hat{A}\otimes_AM\rightarrow\hat{M}$ is surjective. If $A$ is Noetherian, then $\hat{A}\otimes_AM\rightarrow\hat{M}$ is an isomorphism.
+	Let $f:\hat{A}\otimes_AM\rightarrow\hat{A}\otimes_A\hat{M}\rightarrow\hat{A}\otimes_{\hat{A}}\hat{M}\rightarrow\hat{M}$. If $M$ is finitely-generated $A$-module, $f$ is surjective. If moreover $A$ is Noetherian, $f$ is an isomorphism.
 \end{proposition}
 
 \begin{proposition}{10.14}
@@ -114,11 +130,11 @@ A \textcolor{orange}{graded ring} is a ring $A$ together with a family $\left(A_
 
 \begin{proposition}{10.15}
 	If $A$ is a Noetherian ring, $\hat{A}$ its $\mathfrak{a}$-adic completion, then
-	\begin{enumerate}[label=\textup{(\roman*)}]
-		\item $\hat{\mathfrak{a}}=\hat{A}\mathfrak{a}\cong\hat{A}\otimes_A\mathfrak{a}$;
-		\item $\widehat{\left(\mathfrak{a}^n\right)}=\left(\hat{\mathfrak{a}}\right)^n$;
-		\item $\hat{\mathfrak{a}}^n/\hat{\mathfrak{a}}^{n+1}\cong\mathfrak{a}^n/\mathfrak{a}^{n+1}$;
-		\item $\hat{\mathfrak{a}}$ is contained in the Jacobson radical of $\hat{A}$.
+	\begin{enumerate}[label=\textup{(\roman*)},ref=\thepropositiontemp(\roman*)]\crefalias{enumi}{proposition}
+		\item\label{10.15.1} $\hat{\mathfrak{a}}=\hat{A}\mathfrak{a}\cong\hat{A}\otimes_A\mathfrak{a}$;
+		\item\label{10.15.2} $\widehat{\left(\mathfrak{a}^n\right)}=\left(\hat{\mathfrak{a}}\right)^n$;
+		\item\label{10.15.3} $\hat{\mathfrak{a}}^n/\hat{\mathfrak{a}}^{n+1}\cong\mathfrak{a}^n/\mathfrak{a}^{n+1}$;
+		\item\label{10.15.4} $\hat{\mathfrak{a}}$ is contained in the Jacobson radical of $\hat{A}$.
 	\end{enumerate}
 \end{proposition}
 
@@ -126,8 +142,8 @@ A \textcolor{orange}{graded ring} is a ring $A$ together with a family $\left(A_
 	Let $A$ be a Noetherian local ring, $\mathfrak{m}$ its maximal ideal. Then the $\mathfrak{m}$-adic completion $\hat{A}$ of $A$ is a local ring with maximal ideal $\hat{\mathfrak{m}}$.
 \end{proposition}
 
-\begin{proposition}{10.17}[Kull's theorem]
-	Let $A$ be a Noetherian ring, $\mathfrak{a}$ an ideal, $M$ a finitely-generated $A$-module and $\hat{M}$ the $\mathfrak{a}$-adic completion of $M$. Then the kernel $E=\bigcap_{n=1}^\infty\mathfrak{a}^nM$ of $M\rightarrow\hat{M}$ consists of those $x\in M$ annihilated by some element of $1+\mathfrak{a}$.
+\begin{proposition}{10.17}[\textcolor{red}{Krull intersection theorem}]
+	Let $A$ be a Noetherian ring, $\mathfrak{a}$ an ideal, $M$ a finitely-generated $A$-module and $\hat{M}$ the $\mathfrak{a}$-adic completion of $M$. Then the kernel $\bigcap_{n=1}^\infty\mathfrak{a}^nM$ of $M\rightarrow\hat{M}$ consists of all $x\in M$ annihilated by some element of $1+\mathfrak{a}$.
 \end{proposition}
 
 \section*{THE ASSOCIATED GRADED RING}
@@ -164,5 +180,12 @@ which is a graded $G(A)$-module. Let $G_n(M)=M_n/M_{n+1}$.
 	If $A$ is a Noetherian ring, $\mathfrak{a}$ an ideal of $A$, then the $\mathfrak{a}$-adic completion $\hat{A}$ of $A$ is Noetherian.
 \end{proposition}
 
+\section*{DEFINITIONS AND PROPOSITIONS FROM EXERCISES}
 
+\begin{definition}
+	A Noetherian topological ring in which the topology is defined by an ideal contained in the Jacobson radical is called a \textcolor{orange}{Zariski ring}.
+\end{definition}
 
+\begin{proposition*}[Hensel's lemma]
+	Let $A$ be a local ring, $\mathfrak{m}$ its maximal ideal. Assume that $A$ is $\mathfrak{m}$-adically complete. If $f\in A[x]$ is monic of degree $n$, and if there exist coprime monic polynomials $\overline{g}, \overline{h}\in(A/\mathfrak{m})[x]$ of degrees $r$, $n-r$, with $\overline{f}=\overline{g}\overline{h}$, then we can lift $\overline{g}, \overline{h}$ back to monic polynomials $g, h\in A[x]$ such that $f=gh$.
+\end{proposition*}

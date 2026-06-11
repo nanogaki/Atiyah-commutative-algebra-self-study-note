@@ -12,11 +12,25 @@
 \end{exercise}
 
 \begin{exercise}\label{ex8.3}
-	
+	\begin{enumerate}
+		\item[(i) $\Rightarrow$ (ii)] By \Cref{8.7}, we can assume that $A$ is an Artinian local ring. By \Cref {8.4}, $\mathfrak{m}^n=0$ for some $n$, so we have a chain $A=\mathfrak{m}^0\supseteq\mathfrak{m}^1\supseteq\cdots\supseteq\mathfrak{m}^n=0$.\par
+		By \hyperref[7.9]{Zariski's lemma}, $A/\mathfrak{m}$ is a finitely generated $k$-module. By \Cref{8.5}, $A$ is Noetherian, so $\mathfrak{m}^i$ is a finitely generated $A$-module,  and therefore $\mathfrak{m}^i/\mathfrak{m}^{i+1}$ is a finitely generated $A/\mathfrak{m}$-module. Use
+		\begin{align*}
+			&\dim_k\left(\mathfrak{m}^i\middle/\mathfrak{m}^{i+1}\right)=\dim_{A/\mathfrak{m}}\left(\mathfrak{m}^i\middle/\mathfrak{m}^{i+1}\right)\dim_k\left(A\middle/\mathfrak{m}\right);&&\\
+			&\dim_k\left(\mathfrak{m}^i\right)=\dim_k\left(\mathfrak{m}^{i+1}\right)+\dim_k\left(\mathfrak{m}^i\middle/\mathfrak{m}^{i+1}\right),&&\text{where }0\rightarrow\mathfrak{m}^{i+1}\rightarrow\mathfrak{m}^i\rightarrow\mathfrak{m}^i/\mathfrak{m}^{i+1}\rightarrow0
+		\end{align*}
+		to finish the proof.
+		\item[(ii) $\Rightarrow$ (i)] $A$ is a $k$-vector space of finite dimension. Use \Cref{6.10}.
+	\end{enumerate}
 \end{exercise}
 
 \begin{exercise}\label{ex8.4}
-	
+	\begin{enumerate}
+		\item[(i) $\Rightarrow$ (iii)] The finitely-generated property is preserved for localization and quotient of modules.
+		\item[(ii) $\Rightarrow$ (iii)] $B_\mathfrak{p}/\mathfrak{p}B_\mathfrak{p}$ is a finitely generated $k(\mathfrak{p})$-algebra. By \hyperref[7.5]{Hilbert's basis theorem}, any finitely generated $k(\mathfrak{p})$-algebra is Noetherian. Then use \Cref{ex8.2}.
+		\item[(iii) $\Rightarrow$ (ii),(iv)] $B_\mathfrak{p}/\mathfrak{p}B_\mathfrak{p}$ is Noetherian and integral over the field $k(\mathfrak{p})$. If $\mathfrak{q}\in B_\mathfrak{p}/\mathfrak{p}B_\mathfrak{p}$ is prime, $\left(B_\mathfrak{p}/\mathfrak{p}B_\mathfrak{p}\right)/\mathfrak{q}$ is an integral domain, so it is a field by \Cref{5.7}. Hence, every prime ideal in $B_\mathfrak{p}/\mathfrak{p}B_\mathfrak{p}$ is maximal, which means $\operatorname{dim}\left(B_\mathfrak{p}/\mathfrak{p}B_\mathfrak{p}\right)=0$. Thus, $B_\mathfrak{p}/\mathfrak{p}B_\mathfrak{p}$ is Artinian by \Cref{8.5}. Then use \Cref{ex8.2}. 
+	\end{enumerate}
+	A counter example is $f:\mathbb{Q}\hookrightarrow\overline{\mathbb{Q}}$ where $\overline{\mathbb{Q}}$ is an algebraic closure of $\mathbb{Q}$.
 \end{exercise}
 
 \begin{exercise}\label{ex8.5}
@@ -24,5 +38,10 @@
 \end{exercise}
 
 \begin{exercise}\label{ex8.6}
-	
+ 	Consider $(A/\mathfrak{q})_{\overline{\mathfrak{p}}}$, which is an Artinian local ring. Use the following claims then \Cref{6.7}.
+ 	\begin{itemize}
+ 		\item \textit{If $A$ is an Artinian local ring, $\mathfrak{m}$ its only maximal ideal. Then every ideal in $A$ is $\mathfrak{m}$-primary.}\\ Radical is the intersection of the only prime ideal.
+ 		\item \textit{There is a 1-1 correspondence between $\mathfrak{p}$-primary ideals in $A$ and $S^{-1}\mathfrak{p}$-primary ideals in $S^{-1}A$.}\\
+ 		Use \Cref{3.11.1} and \Cref{4.9}.
+ 	\end{itemize}
 \end{exercise}
