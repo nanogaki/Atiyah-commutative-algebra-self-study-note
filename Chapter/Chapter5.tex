@@ -83,7 +83,7 @@ An integral domain is said to be \textcolor{orange}{integrally closed} (without 
 	A ring homomorphism $f: A\rightarrow B$ is said to have the \textcolor{orange}{going-up property} if for $\mathfrak{p}_1\subseteq\mathfrak{p}_2$ and $\mathfrak{p}_1=f^{-1}(\mathfrak{q}_1)$, there exist a $\mathfrak{q}_2$ such that $\mathfrak{q}_1\subseteq\mathfrak{q}_2$ and $f^{-1}(\mathfrak{q}_2)=\mathfrak{p}_2$. Reversing the inclusions of prime ideals we have the \textcolor{orange}{going-down property}.
 \end{definition}
 
-\begin{proposition*}[\textcolor{red}{Noether normalization lemma}]
+\begin{proposition*}[\textcolor{red}{Noether normalization lemma}]\label{noethernormalization}
 	Let $k$ be a field and let $A\neq0$ be a finitely generated $k$-algebra. Then there exist elements $y_1,\cdots,y_r\in A$ which are algebraically independent over $k$ and such that $A$ is integral over $k[y_1,\cdots,y_r]$.
 \end{proposition*}
 
@@ -93,6 +93,17 @@ An integral domain is said to be \textcolor{orange}{integrally closed} (without 
 		\item Every prime ideal in $A$ is an intersection of maximal ideals.
 		\item In every homomorphic image of $A$ the nilradical is equal to the Jacobson radical.
 		\item Every prime ideal in $A$ which is not maximal is equal to the intersection of the prime ideals which contain it strictly.
+	\end{enumerate}
+\end{definition}
+
+\begin{definition}
+	A subset of a topological space $X$ is \textcolor{orange}{locally closed} if it is the intersection of an open set and a closed set.
+	
+	A subset $X_0$ satisfying the following equivalent conditions is said to be \textcolor{orange}{very dense} in $X$:
+	\begin{enumerate}[label=\textup{(\arabic*)}]
+		\item Every non-empty locally closed subset of $X$ meets $X_0$.
+		\item For every closed set $E$ in $X$ we have $\overline{E\cap X_0}=E$.
+		\item The mapping $U\mapsto U\cap X_0$ of the collection of open sets of $X$ on to the collection of open sets of $X_0$ is bijective.
 	\end{enumerate}
 \end{definition}
 

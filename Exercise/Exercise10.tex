@@ -67,7 +67,7 @@
 \begin{exercise}\label{ex10.8}
 	By \Cref{ex1.5.1} and \Cref{1.6.1}, the only maximal ideal of $B$ is $\mathfrak{m}=(z_1,\cdots,z_n)$.
 	
-	The $\mathfrak{m}$-adic topologies on $A$, $B$ and $C$ are respectively equal to the induced topologies from the $\mathfrak{m}$-adic topology on $\mathbb{C}[z_1,\cdots,z_n]$. Apply \Cref{10.2} or \Cref{10.3} to $\mathbb{C}[z_1,\cdots,z_n]\subseteq A\subseteq B\subseteq C$.
+	The $\mathfrak{m}$-adic topologies on $A$, $B$ and $C$ are respectively equal to the induced topologies from the $\mathfrak{m}$-adic topology on $\mathbb{C}[z_1,\cdots,z_n]$. Apply \Cref{10.2} to $\mathbb{C}[z_1,\cdots,z_n]\subseteq A\subseteq B\subseteq C$.
 	
 	By \Cref{10.14}, $C$ is a flat $A$-algebra. Then use \Cref{ex10.7} and \Cref{ex3.17}.
 \end{exercise}
@@ -75,7 +75,7 @@
 \begin{exercise}\label{ex10.9}
 	Assume that we have constructed $g_k$ and $h_k$ such that $f-g_kh_k\in\mathfrak{m}^k[x]$. Denote $w_k=f-g_kh_k$. Since there exist  $u_k$ and $v_k$ such that $1-u_kg_k-v_kh_k\in\mathfrak{m}[x]$, we have $w_k-w_ku_kg_k-w_kv_kh_k\in\mathfrak{m}^{k+1}[x]$.
 	
-	Applying polynomial division algorithm, we have $w_ku_k=q_kh_k+a_k$ with $\deg a_k<\deg h_k$. Since $h_k$ monic, the division process shows that  $q_k, a_k\in\mathfrak{m}^k[x]$. Let $b_k=w_kv_k+q_kg_k$, then $b_k\in\mathfrak{m}^k[x]$. Note that $\deg w_k<n$, we have $\deg b_k<\deg g_k$ in the polynomial ring $\left(A/\mathfrak{m}^{k+1}\right)[x]$.
+	Applying polynomial division algorithm, we have $w_ku_k=q_kh_k+a_k$ with $\deg a_k<\deg h_k$. Since $h_k$ monic, the division process shows that  $q_k\in\mathfrak{m}^k[x]$, so $a_k\in\mathfrak{m}^k[x]$. Let $b_k=w_kv_k+q_kg_k$, then $b_k\in\mathfrak{m}^k[x]$. Note that $\deg w_k<n$, we have $\deg b_k<\deg g_k$ in the polynomial ring $\left(A/\mathfrak{m}^{k+1}\right)[x]$.
 	
 	Let $g_{k+1}=g_k+b_k$, $h_{k+1}=h_k+a_k$, then $f-g_{k+1}h_{k+1}\in\mathfrak{m}^{k+1}[x]$. Since $A$ complete, the coefficients of $g_k$ and $h_k$ converge, so we have $g, h\in A[x]$ such that $g\equiv g_k\mod\mathfrak{m}^k$ and $h\equiv h_k\mod\mathfrak{m}^k$. Therefore, $f-gh\in\bigcap_{k=1}^\infty\mathfrak{m}^k[x]$. By \Cref{10.17}, $\bigcap_{k=1}^\infty\mathfrak{m}^k[x]=0$.
 \end{exercise}

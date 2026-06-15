@@ -24,26 +24,30 @@ Since $T_a(x)=x+a$ is a homeomorphism, the topology of $G$ is uniquely determine
 	\end{enumerate}
 \end{proposition}
 
-Assume that $0\in G$ has a countable fundamental system of neighborhoods. A \textcolor{orange}{Cauchy sequence} $(x_\nu)$ of $G$ is that, for any neighborhood $U$ of 0, there exists an integer $s(U)$ such that $x_m-x_n\in U$ for all $m,n\geqslant s(U)$.
+\begin{definition}
+	Assume that $0\in G$ has a countable fundamental system of neighborhoods. A \textcolor{orange}{Cauchy sequence} $(x_\nu)$ of $G$ is that, for any neighborhood $U$ of 0, there exists an integer $s(U)$ such that $x_m-x_n\in U$ for all $m,n\geqslant s(U)$.
 
-Let $C(G)$ be the set of all Cauchy sequences in $G$. Define an equivalence relation $\sim$ on $C(G)$ where $(x_\nu)\sim(y_\nu)$ means $x_n-y_n\rightarrow0$ in $G$. The \textcolor{orange}{completion} $\hat{G}$ of $G$ is the set of all equivalence classes in $C(G)/\mathord{\sim}$.
+	Let $C(G)$ be the set of all Cauchy sequences in $G$. Define an equivalence relation $\sim$ on $C(G)$ where $(x_\nu)\sim(y_\nu)$ means $x_n-y_n\rightarrow0$ in $G$. The \textcolor{orange}{completion} $\hat{G}$ of $G$ is the set of all equivalence classes in $C(G)/\mathord{\sim}$.
 
-For each $x\in G$, define a homomorphism $\phi:G\rightarrow\hat{G}$ maps to a constant sequence $(x)$. Then $\phi$ is injective iff $G$ is Hausdorff.
+	For each $x\in G$, define a homomorphism $\phi:G\rightarrow\hat{G}$ maps to a constant sequence $(x)$. Then $\phi$ is injective iff $G$ is Hausdorff.
+\end{definition}
 
-\bigskip
+\begin{definition}
+	Assume further that $0\in G$ has a fundamental system of neighborhoods consisting of a sequence of subgroups
+	\begin{equation*}
+		G=G_0\supseteq G_1\supseteq\cdots\supseteq G_n\supseteq\cdots.
+	\end{equation*}
+	For any $(x_\nu)\in C(G)$ and a fixed $n$, the image sequence $(\xi_\nu+G_n)$ in $G/G_n$ is ultimately constant. Let $\xi_n$ be this ultimate constant value.
 
-Assume further that $0\in G$ has a fundamental system of neighborhoods consisting of a sequence of subgroups
-\begin{equation*}
-	G=G_0\supseteq G_1\supseteq\cdots\supseteq G_n\supseteq\cdots.
-\end{equation*}
-For any $(x_\nu)\in C(G)$ and a fixed $n$, the image sequence $(\xi_\nu+G_n)$ in $G/G_n$ is ultimately constant. Let $\xi_n$ be this ultimate constant value.
-
-As $n$ varies, the projection $\theta_{n+1}:G/G_{n+1}\rightarrow G/G_n$ satisfies $\theta_{n+1}\left(\xi_{n+1}\right)=\xi_n$ for all $n$. The groups $G/G_n$ combined with maps $\theta_n$ form an \textbf{inverse system}, and the group of all such coherent sequences $(\xi_\nu)$ is called the \textbf{inverse limit}, denoted as
+	As $n$ varies, the projection $\theta_{n+1}:G/G_{n+1}\rightarrow G/G_n$ satisfies $\theta_{n+1}\left(\xi_{n+1}\right)=\xi_n$ for all $n$. The groups $G/G_n$ combined with maps $\theta_n$ form an \textbf{inverse system}, and the group of all such coherent sequences $(\xi_\nu)$ is called the \textbf{inverse limit}, denoted as
 \begin{equation*}
 	\hat{G}=\varprojlim G/G_n.
 \end{equation*}
+\end{definition}
 
-A direct (or inverse) system is called \textcolor{orange}{injective}/\textcolor{orange}{surjective system}, if every transition map $\mu_{ij}$ is injective/surjective.
+\begin{definition}
+	A direct (or inverse) system is called \textcolor{orange}{injective}/\textcolor{orange}{surjective system}, if every transition map $\mu_{ij}$ is injective/surjective.
+\end{definition}
 
 \begin{proposition}{10.2}
 	If $0\rightarrow\left\{A_n\right\}\rightarrow\left\{B_n\right\}\rightarrow\left\{C_n\right\}\rightarrow0$ is an exact sequence of inverse system, then
@@ -161,10 +165,10 @@ which is a graded $G(A)$-module. Let $G_n(M)=M_n/M_{n+1}$.
 
 \begin{proposition}{10.22}
 	Let $A$ be a Noetherian ring, $\mathfrak{a}$ an ideal of $A$. Then
-	\begin{enumerate}[label=\textup{(\roman*)}]
-		\item $G_\mathfrak{a}(A)$ is Noetherian;
-		\item $G_\mathfrak{a}(A)$ and $G_{\hat{\mathfrak{a}}}(\hat{A})$ are isomorphic as graded rings;
-		\item If $M$ is a finitely-generated $A$-module and $\left(M_n\right)$ is a stable $\mathfrak{a}$-filtration of $M$, then $G(M)$ is a finitely-generated graded $G_\mathfrak{a}(A)$-module.
+	\begin{enumerate}[label=\textup{(\roman*)},ref=\thepropositiontemp(\roman*)]\crefalias{enumi}{proposition}
+		\item\label{10.22.1} $G_\mathfrak{a}(A)$ is Noetherian;
+		\item\label{10.22.2} $G_\mathfrak{a}(A)$ and $G_{\hat{\mathfrak{a}}}(\hat{A})$ are isomorphic as graded rings;
+		\item\label{10.22.3} If $M$ is a finitely-generated $A$-module and $\left(M_n\right)$ is a stable $\mathfrak{a}$-filtration of $M$, then $G(M)$ is a finitely-generated graded $G_\mathfrak{a}(A)$-module.
 	\end{enumerate}
 \end{proposition}
 
@@ -176,9 +180,13 @@ which is a graded $G(A)$-module. Let $G_n(M)=M_n/M_{n+1}$.
 	\end{enumerate}
 \end{proposition}
 
-\begin{proposition}{10.26}
-	If $A$ is a Noetherian ring, $\mathfrak{a}$ an ideal of $A$, then the $\mathfrak{a}$-adic completion $\hat{A}$ of $A$ is Noetherian.
+\begin{proposition}{10.24}
+	Let $A$ be a ring, $\mathfrak{a}$ an ideal of $A$, $M$ an $A$-module, $\left(M_n\right)$ an $\mathfrak{a}$-filtration of $M$. Suppose that $A$ is complete in the $\mathfrak{a}$-topology and that $\bigcap_nM_n=0$. Suppose also $G(M)$ is a finitely generated $G(A)$-module. Then $M$ is a finitely generated $A$-module.
 \end{proposition}
+
+\begin{theorem}{10.26}
+	If $A$ is a Noetherian ring, $\mathfrak{a}$ an ideal of $A$, then the $\mathfrak{a}$-adic completion $\hat{A}$ of $A$ is Noetherian.
+\end{theorem}
 
 \section*{DEFINITIONS AND PROPOSITIONS FROM EXERCISES}
 

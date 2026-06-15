@@ -40,6 +40,10 @@ If $M=A$, the polynomial $\chi_\mathfrak{q}^M(n)$ is called the \textcolor{orang
 	$\operatorname{deg}\chi_\mathfrak{q}(n)=\operatorname{deg}\chi_\mathfrak{m}(n)$.
 \end{proposition}
 
+If $A$ is a ring, $\mathfrak{p}$ a prime ideal in $A$, then the \textcolor{orange}{height} of $\mathfrak{p}$ is defined to be the supremum of chains of prime ideals $\mathfrak{p}_0\subsetneq\mathfrak{p}_1\subsetneq\cdots\subsetneq\mathfrak{p}_r=\mathfrak{p}$ which end at $\mathfrak{p}$. Hence $\operatorname{height}\mathfrak{p}=\dim A_\mathfrak{p}$.
+
+Likewise we define the \textcolor{orange}{depth} of $\mathfrak{p}$, by considering chains of prime ideals which start at $\mathfrak{p}$. Hence, $\operatorname{depth}\mathfrak{p}=\dim A/\mathfrak{p}$.
+
 \section*{DIMENSION THEORY OF NOETHERIAN LOCAL RINGS}
 
 \begin{theorem}{11.14}[Dimension theorem]
@@ -56,8 +60,18 @@ If $M=A$, the polynomial $\chi_\mathfrak{q}^M(n)$ is called the \textcolor{orang
 \end{corollary}
 
 \begin{corollary}{11.18}
-	Let $A$ be a Noetherian local ring, $x$ an element of $\mathfrak{m}$ which is not a zero-divisor. THen $\dim A/(x)=\dim A-1$.
+	Let $A$ be a Noetherian local ring, $x$ an element of $\mathfrak{m}$ which is not a zero-divisor. Then $\dim A/(x)=\dim A-1$.
 \end{corollary}
+
+\begin{corollary}{11.19}
+	Let $\hat{A}$ be the $\mathfrak{m}$-adic completion of $A$. Then $\dim A=\dim\hat{A}$.
+\end{corollary}
+
+If $x_1,\cdots,x_d$ generate an $\mathfrak{m}$-primary ideal, and $d=\dim A$, we call $x_1,\cdots,x_d$ a \textcolor{orange}{system of parameters}.
+
+\begin{proposition}{11.20}
+	Let $x_1,\cdots,x_d$ be a system of parameters for $A$ and let $\mathfrak{q}=\left(x_1,\cdots,x_d\right)$ be the $\mathfrak{m}$-primary ideal. Let $f\left(t_1,\cdots,t_d\right)$ be a homogeneous polynomial of degree $s$ with coefficients in $A$, and assume that $f\left(x_1,\cdots,x_d\right)\in\mathfrak{q}^{s+1}$. Then all the coefficients of $f$ lie in $\mathfrak{m}$.
+\end{proposition}
 
 \section*{REGULAR LOCAL RINGS}
 
