@@ -41,7 +41,7 @@
 \begin{exercise}\label{ex5.10}
 	\begin{enumerate}
 		\item[(a) $\Rightarrow$ (b)] Let $f^*(V(\mathfrak{q}_1))=V(I)$, so $I\subseteq\mathfrak{p}_1\subseteq\mathfrak{p}_2$, and we have $\mathfrak{p}_2\in V(I)=f^*(V(\mathfrak{q}_1))$.
-		\item[(a') $\Rightarrow$ (c')] 
+		\item[(a') $\Rightarrow$ (c')] By \hyperref[ex3.23]{\Cref*{ex3.23}(v)} and \Cref{ex3.26}, $f^*\left(\operatorname{Spec}\left(B_\mathfrak{q}\right)\right)=f^*\left(\varinjlim\operatorname{Spec}\left(B_t\right)\right)=\bigcap_tf_t^*\left(\operatorname{Spec}\left(B_t\right)\right)$. Each $f_t^*\left(\operatorname{Spec}\left(B_t\right)\right)$ is an open neighborhood of $\mathfrak{p}$, so it contains $A_\mathfrak{p}$.
 	\end{enumerate}
 \end{exercise}
 
@@ -66,7 +66,7 @@
 \end{exercise}
 
 \begin{exercise}\label{ex5.16}
-	
+	We have a homomorphism $f:k\left[y_1,\cdots,y_r\right]\hookrightarrow k\left[x_1,\cdots,x_n\right]\twoheadrightarrow  A$. Let $a=\left(a_1,\cdots,a_r\right)\in L$ corresponds to a maximal ideal $\mathfrak{m}_a=\left(y_1-a_1,\cdots,y_r-a_r\right)$. By \Cref{5.10}, we can find a prime ideal $\mathfrak{p}_a\subset A$ such that $f^{-1}(\mathfrak{p}_a)=\mathfrak{m}_a$, which is contained in a maximal $\mathfrak{n}_a$. Notice that $\mathfrak{n}_a$ correspond a point in $X$.
 \end{exercise}
 
 \begin{exercise}\label{ex5.17}
@@ -86,7 +86,7 @@
 \end{exercise}
 
 \begin{exercise}\label{ex5.20}
-	Hint.
+	Let $S=A-\{0\}$. By \hyperref[noethernormalization]{Noether normalization lemma}, $S^{-1}B$ is integral over $S^{-1}A\left[y_1,\cdots,y_r\right]$ with $y_1,\cdots,y_r\in S^{-1}B$. The denominators of $y_1,\cdots,y_r$ can be absorbed to $S^{-1}A$, so we can assume $y_1,\cdots,y_r\in B$. Let $B=A\left[x_1,\cdots,x_n\right]$, then $x_i/1\in S^{-1}B$ is integral over $S^{-1}A\left[y_1,\cdots,y_r\right]$. Reduce the coefficients of all integral dependence equations to a common denominator $s$, we have $x_i/1$ is integral over $A_s\left[y_1,\cdots,y_r\right]$. Therefore, $B_s=A_s\left[x_1/1,\cdots,x_n/1\right]$ is integral over $A_s\left[y_1,\cdots,y_r\right]$.
 \end{exercise}
 
 \begin{exercise}\label{ex5.21}
@@ -98,11 +98,13 @@
 			&&&\Omega&
 		\end{tikzcd}
 	\end{equation*}
-	$f_s$ by universal property of localization. $f_s^\prime$ by defining $y_i\mapsto0$. By \Cref{ex5.20}, $B_s$ integral over $A_s\left[y_1,\cdots,y_n\right]$, so $g$ is obtained by \Cref{ex5.2}.
+	By \Cref{ex5.20}, $B_s$ integral over $A_s\left[y_1,\cdots,y_n\right]$, so $g$ is obtained from \Cref{ex5.2}. Then, $f_s$ by universal property of localization; $f_s^\prime$ by defining $y_i\mapsto0$. 
 \end{exercise}
 
 \begin{exercise}\label{ex5.22}
-	Hint.
+	Let $v\neq0$ an element of $B$. Then $B_v$ is integral over $A$, so $f:A\rightarrow\Omega$ can be extended to $\overline{f}:B_v\rightarrow\Omega$ by \Cref{ex5.21}, with $s\neq0$ an element of $A$ such that $f(s)\neq0$. Find an $\mathfrak{m}$ such that $s\notin\mathfrak{m}$ and use \Cref{ex5.21} again, $g:A\rightarrow\overline{A/\mathfrak{m}}$ can be extended to $\overline{g}:B_v\rightarrow\overline{A/\mathfrak{m}}$. Since $\overline{g}(s)\neq0$, $\overline{g}$ is not trivial, so $\overline{g}(1/v)\overline{g}(v)=\overline{g}(1)=1$ means $\overline{g}(v)\neq0$.
+	
+	Since $\overline{A/\mathfrak{m}}$ integral over $A/\mathfrak{m}$, $\overline{g}\left(B_v\right)$ integral over $A/\mathfrak{m}$, so $\overline{g}\left(B_v\right)\cong B_v/\ker\left(\overline{g}\right)$ is a field and therefore $\ker\overline{g}$ is maximal. By \Cref{5.10}, $\ker\overline{g}\cap B$ is maximal in $B$ that doesn't contain $v$.
 \end{exercise}
 
 \begin{exercise}\label{ex5.23}
@@ -122,8 +124,8 @@
 
 \begin{exercise}\label{ex5.25}
 	\begin{enumerate}
-		\item[(i) $\Rightarrow$ (ii)] 
-		\item[(ii) $\Rightarrow$ (i)] 
+		\item[(i) $\Rightarrow$ (ii)] Similar to the proof of \Cref{ex5.22}, we can find $\overline{g}:B\rightarrow\overline{A/\mathfrak{m}}$. Let $B=A\left[x_1,\cdots,x_n\right]$, then $\overline{g}\left(x_i\right)$ integral over $A/\mathfrak{m}$, and therefore $\overline{g}(B)$ is finitely generated as an $A/\mathfrak{m}$-algebra. By \hyperref[ex5.18]{Zariski's lemma}, $\overline{g}(B)$ is finite over $A/\mathfrak{m}$. Note that $B$ is a field, so $\overline{g}$ injective.
+		\item[(ii) $\Rightarrow$ (i)] Take $B=A/\mathfrak{p}$. For any $f\neq0$ in $B$, $B_f$ is a finitely generated $A$-algebra. If $B_f$ is a field, it is finite over $A$, so integral over $A$. The integral dependence equation also asserts that $B_f$ is integral over $B$, so $B$ is a field by \Cref{5.7}. If $B_f$ is not a field, it has a non-zero prime ideal whose contraction in $B$ doesn't contain $f$. Therefore, the intersection of all prime ideals in $B$ is zero.
 	\end{enumerate}
 \end{exercise}
 

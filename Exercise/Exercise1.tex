@@ -85,10 +85,11 @@
 \end{exercise}
 
 \begin{exercise}\label{ex1.17}
-	\begin{enumerate}
+	\begin{enumerate}[label=(\roman*),ref=\theexercise(\roman*)]\crefalias{enumi}{exercise}
 		\item[(i)-(iv)] Use \Cref{ex1.15}.
-		\item[(v)]\label{ex1.17.5} Let $\left(X_{f_i}\right)_{i\in I}$ be an open cover. By \Cref{ex1.15}, $V\left(\left\{f_i\right\}_{i\in I}\right)=\varnothing$, so $\left\{f_i\right\}_{i\in I}$ generates the unit ideal. Let $1=\sum_{i\in J}g_if_i$ where $J$ is a finite subset of $I$. If $\mathfrak{p}\notin\bigcup_{i\in J}X_{f_i}$, then $f_i\in\mathfrak{p}$ for all $i\in J$.
-		\item[(vi)] Similar to \hyperref[ex1.17.5]{(v)}, where the unit ideal shall change to the radical $\sqrt{(f)}$.
+		\addtocounter{enumi}{4}
+		\item\label{ex1.17.5} Let $\left(X_{f_i}\right)_{i\in I}$ be an open cover. By \Cref{ex1.15}, $V\left(\left\{f_i\right\}_{i\in I}\right)=\varnothing$, so $\left\{f_i\right\}_{i\in I}$ generates the unit ideal. Let $1=\sum_{i\in J}g_if_i$ where $J$ is a finite subset of $I$. If $\mathfrak{p}\notin\bigcup_{i\in J}X_{f_i}$, then $f_i\in\mathfrak{p}$ for all $i\in J$.
+		\item Similar to \hyperref[ex1.17.5]{(v)}, where the unit ideal shall change to the radical $\sqrt{(f)}$.
 	\end{enumerate}
 \end{exercise}
 

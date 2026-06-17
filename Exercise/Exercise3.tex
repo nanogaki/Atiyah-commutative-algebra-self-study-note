@@ -146,15 +146,24 @@
 \end{exercise}
 
 \begin{exercise}\label{ex3.24}
+	\Cref{ex1.17.5} asserts that there exists a finite open cover $\left(X_{f_i}\right)$ such that $\sum_{i=1}^n\left(f_i\right)=\left(f_1,...,f_n\right)=(1)$, hence $\sqrt{\sum_{i=1}^n\left(f_i^N\right)}=\sqrt{\sum_{i=1}^n\sqrt{\left(f_i^N\right)}}=(1)$ and therefore $\sum_{i=1}^n\left(f_i^N\right)=(1)$ for all $N$. We can find $b_i$ such that $\sum_{i=1}^nb_if_i^N=1$.
 	
+	Pick $N$ large enough and let $s_i=a_i^\prime/f_i^{m_i}=a_i/f_i^N$. Define $s=\sum_{i=1}^na_ib_i$. Note that $a_i/f_i^N=a_j/f_j^N$ in $A\left(U_i\cap U_j\right)$, and use it to verify $s$ satisfies the condition.
+	
+	If $t=s-s^\prime$, $t/1=0$ in all $A_f$. Pick $f_i$ are those correspond to the open cover, so $f_i^Mt=0$ for a large $M$. Then $t=\sum_{i=1}^nb_if_i^Nt=0$.
 \end{exercise}
 
 \begin{exercise}\label{ex3.25}
-	
+	\textcolor{magenta}{The $h$ is not a homomorphism. Redifine $h(x)=f(x)\otimes1=1\otimes g(x)$.} We have fibers 
+	\begin{align*}
+		&f^{*-1}(\mathfrak{p})=\operatorname{Spec}\left(B\otimes_Ak(\mathfrak{p})\right)\qquad g^{*-1}(\mathfrak{p})=\operatorname{Spec}\left(C\otimes_Ak(\mathfrak{p})\right)\\
+		&h^{*-1}(\mathfrak{p})=\operatorname{Spec}\left(\left(B\otimes_AC\right)\otimes_Ak(\mathfrak{p})\right)\cong\operatorname{Spec}\left(\left(B\otimes_Ak(\mathfrak{p})\right)\otimes_{k(\mathfrak{p})}\left(C\otimes_Ak(\mathfrak{p})\right)\right)
+	\end{align*}
+	Note that $B\otimes_Ak(\mathfrak{p})$ and $C\otimes_Ak(\mathfrak{p})$ are vector space, so $\mathfrak{p}\in h^*(T)$ iff $\left(B\otimes_Ak\right)\otimes_k\left(C\otimes_Ak\right)\neq0$, iff $B\otimes_Ak\neq0$ and $C\otimes_Ak\neq0$, iff $\mathfrak{p}\in f^*(Y)$ and $\mathfrak{p}\in g^*(Z)$.
 \end{exercise}
 
 \begin{exercise}\label{ex3.26}
-	
+	The fiber $f^{*-1}(\mathfrak{p})$ is the spectrum of $B\otimes_Ak(\mathfrak{p})$. By \Cref{ex2.20}, $B\otimes_Ak(\mathfrak{p})=\varinjlim\left(B_\alpha\otimes_Ak(\mathfrak{p})\right)$. By \Cref{ex2.21}, $f^{*-1}(\mathfrak{p})=\varnothing$ $\Rightarrow$ $B_\alpha\otimes_Ak(\mathfrak{p})=0$ for some $\alpha$, and the reverse is true by the definition of direct limit of rings.
 \end{exercise}
 
 \begin{exercise}\label{ex3.27}
