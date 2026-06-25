@@ -34,13 +34,15 @@ Exercise 3.8 shows that saturated multiplicatively closed subsets of $A$ are in 
 
 The results in Proposition 4.4 and 4.8 are fundamental for understanding primary ideal structure.
 
-Proposition 4.9 is particularly useful for computations.
+Proposition 4.9 is useful for computations.
+
+Exercise 4.13 (iv) has typo issue. It should be: $\mathfrak{p}^{(n)}=\mathfrak{p}^{n} \Leftrightarrow \mathfrak{p}^{n}$ is $\mathfrak{p}$-primary.
 
 ### Chapter 5 — Integral Dependence and Valuations
 
 The most important chapter in the book.
 
-**Important results** Lying Over Theorem (Theorem 5.10), Noether Normalization Lemma (Exercise 5.16).
+**Important results:** Lying Over Theorem (Theorem 5.10), Noether Normalization Lemma (Exercise 5.16).
 
 Exercise 5.10 connects the going-up and going-down properties of a ring homomorphism with topological properties of the induced map on spectra, butthe  ideas are not used further in the book.
 
