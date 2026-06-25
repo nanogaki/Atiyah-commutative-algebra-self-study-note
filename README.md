@@ -20,7 +20,7 @@ The exercises introduce the spectrum of a ring, which becomes a central object i
 
 ### Chapter 2 — Modules
 
-One of the most important results in the chapter is **Nakayama's Lemma**, which appears throughout the book.
+One of the most important results in the chapter is Nakayama's Lemma (Proposition 2.6), which appears throughout the book.
 
 The exercises also introduce direct limits and absolutely flat rings.
 
@@ -44,17 +44,17 @@ The most important chapter in the book.
 
 **Important results:** Lying Over Theorem (Theorem 5.10), Noether Normalization Lemma (Exercise 5.16).
 
-Exercise 5.10 connects the going-up and going-down properties of a ring homomorphism with topological properties of the induced map on spectra, butthe  ideas are not used further in the book.
+Exercise 5.10 connects the going-up and going-down properties of a ring homomorphism with topological properties of the induced map on spectra, but the ideas are not used further in the book.
 
 Exercise 5.25 uses Jacobson rings to generalize Zariski's Lemma.
 
 ### Chapter 6 & 7 — Chain Conditions & Noetherian Rings
 
-Most exercises further refine the concepts rather than introducing substantially new ideas.
+Most exercises further refine old concepts rather than introducing new ideas.
 
 ### Chapter 8 — Artinian Rings
 
-An mportant result is Theorem 8.5.
+An important result is Theorem 8.5.
 
 Exercise 8.3 provides another generalization of Zariski's Lemma.
 
@@ -74,4 +74,4 @@ The proof of Hensel's lemma (Exercise 10.9) is straightforward, but it involves 
 
 The central result of the chapter is the Dimension Theorem for Noetherian local rings (Theorem 11.14).
 
-The chapter mainly serves as an introduction to the subject, and a deeper understanding generally requires further study.
+This chapter mainly serves as an introduction to the subject, and a deeper understanding generally requires further study.
