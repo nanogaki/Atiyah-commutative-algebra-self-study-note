@@ -1,4 +1,4 @@
-# Introduction to Commutative Algebra — Study Notes
+# Introduction to Commutative Algebra — Self-Study Notes
 
 ## Personal Note
 
@@ -38,15 +38,13 @@ Proposition 4.9 is particularly useful for computations.
 
 ### Chapter 5 — Integral Dependence and Valuations
 
-The most important chapters in the book.
+The most important chapter in the book.
 
-**Important results:**
+**Important results** Lying Over Theorem (Theorem 5.10), Noether Normalization Lemma (Exercise 5.16).
 
-* Lying Over Theorem.
-* Noether Normalization.
-* Jacobson rings (Exercise 5.25), which can be viewed as a far-reaching generalization of Zariski's Lemma.
+Exercise 5.10 connects the going-up and going-down properties of a ring homomorphism with topological properties of the induced map on spectra, butthe  ideas are not used further in the book.
 
-These ideas reappear frequently in algebraic geometry and dimension theory.
+Exercise 5.25 uses Jacobson rings to generalize Zariski's Lemma.
 
 ### Chapter 6 & 7 — Chain Conditions & Noetherian Rings
 
