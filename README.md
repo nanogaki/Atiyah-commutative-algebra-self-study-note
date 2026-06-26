@@ -4,9 +4,9 @@
 
 After spending many years working toward a PhD in a different field, I finally found the time to study mathematics seriously. Although I invested enormous effort in my previous subject, mathematics continues to excite me more than almost anything else I do. This project marks the beginning of my first long-term self-study journey in pure mathematics.
 
-I completed roughly 90% of the exercises in *Introduction to Commutative Algebra* by Atiyah and Macdonald. For many exercises, I only recorded the key ideas rather than writing out every detail of a complete proof. While carefully reading a long proof is often necessary, I found that focusing on the central concepts helped me absorb the material more efficiently. I may return to complete all exercises in the future, but for now I prefer to continue exploring more advanced topics.
+I completed roughly 90% of the exercises in *Introduction to Commutative Algebra* by Atiyah and Macdonald. I only recorded the key ideas rather than writing out every detail of a complete proof, because focusing on the central concepts helped me absorb the material more efficiently. I may return to complete all exercises in the future, but for now I prefer to continue exploring more advanced topics.
 
-The summaries below highlight the concepts that were new or particularly important to me. Some interpretations, comments, and exercise notes may be incomplete or even incorrect. If you notice any mistakes, I would greatly appreciate corrections, suggestions, or alternative viewpoints.
+The summaries below highlight the concepts that were new or particularly important to me. Some interpretations, comments, and exercise notes may be incorrect. If you notice any mistakes, I would appreciate corrections, suggestions, or alternative viewpoints.
 
 ---
 
